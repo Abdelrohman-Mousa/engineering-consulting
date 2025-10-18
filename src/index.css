@@ -1,0 +1,62 @@
+:root {
+  /* 🎨 Colors */
+  --background-light: #F8F9FA;
+  --background-dark: #1A172D;
+  --text-color-light: #ffffff;
+  --text-color-dark: #000000;
+
+  /* General Settings */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-color: var(--background-light);
+   color: var(--text-color-dark);
+   transition: background-color 0.3s ease, color 0.3s ease;
+   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.en-img {
+  width: 40px;
+  height: 35px;
+  padding-right: 10px;
+}
+
+/* dark Mode */
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-color-light);
+}
