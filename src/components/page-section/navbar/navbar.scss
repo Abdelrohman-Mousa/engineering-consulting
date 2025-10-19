@@ -113,7 +113,7 @@ body.dark .navbar {
 
   .nav-2 {
     .lang {
-      .css-e34boy-MuiAvatar-root {
+      .MuiAvatar-root {
         background-color: #2D274C;
       }
       .MuiAvatar-root .icon-1 {
@@ -137,6 +137,6 @@ body.dark .navbar {
     color: #ffffff;
   }
 }
-.dark .css-x6cj71-MuiPaper-root-MuiPopover-paper-MuiMenu-paper::before{
-   background-color: #2D274C;
+.dark .MuiPaper-root.MuiMenu-paper::before {
+  background-color: #2D274C;
 }
