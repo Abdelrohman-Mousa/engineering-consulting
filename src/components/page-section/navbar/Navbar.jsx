@@ -1,6 +1,6 @@
 import logo from '../../../assets/icons/logo.svg';
-import darkModeLogo from '../../../assets/icons/dark-icon-logo.svg';
-import lightModeLogo from '../../../assets/icons/light-icon-logo.svg';
+import darkModeLogo from '../../../assets/icons/dark-mode.svg';
+import lightModeLogo from '../../../assets/icons/light-mode.svg';
 import './navbar.scss';
 import LanguagesMenu from '../../materialUI/LanguagesMenu';
 import { ShinyButton } from "@/components/ui/shiny-button";
