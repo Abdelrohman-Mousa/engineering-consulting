@@ -5,12 +5,17 @@ import './navbar.scss';
 import LanguagesMenu from '../../materialUI/LanguagesMenu';
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { useTranslation } from 'react-i18next';
+import TemporaryDrawer from '../Sidebar/Sidebar';
+import { MenuIcon } from 'lucide-react';
+import { useState } from 'react';
+import { IconButton } from '@mui/material';
 
 const Navbar = ({theme, setTheme}) => {
   const { t } =useTranslation();
   const toggle_mode = () => {
     theme == 'light' ? setTheme('dark') : setTheme('light')
   }
+const [open, setOpen] = useState(false);
 
   return (
     <div className="navbar">
@@ -47,6 +52,15 @@ const Navbar = ({theme, setTheme}) => {
           <ShinyButton>{t("signIn")}</ShinyButton>
         </div>
       </div>
+      
+      {/* Sidebar */}
+       <div className="menu-icon">
+         <IconButton onClick={() => setOpen(true)}>
+           <MenuIcon />
+         </IconButton>
+       </div>
+       <TemporaryDrawer open={open} setOpen={setOpen} />
+
     </div>
   )
 }

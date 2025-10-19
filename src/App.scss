@@ -2,6 +2,26 @@
   padding: 10px 15px;
 }
 
+// responsive
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 739px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
