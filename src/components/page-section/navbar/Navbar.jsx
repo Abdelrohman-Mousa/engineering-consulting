@@ -5,7 +5,7 @@ import './navbar.scss';
 import LanguagesMenu from '../../materialUI/LanguagesMenu';
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { useTranslation } from 'react-i18next';
-import TemporaryDrawer from '../Sidebar/Sidebar';
+import TemporaryDrawer from '../sidebar/Sidebar';
 import { MenuIcon } from 'lucide-react';
 import { useState } from 'react';
 import { IconButton } from '@mui/material';
@@ -52,7 +52,7 @@ const [open, setOpen] = useState(false);
           <ShinyButton>{t("signIn")}</ShinyButton>
         </div>
       </div>
-      
+
       {/* Sidebar */}
        <div className="menu-icon">
          <IconButton onClick={() => setOpen(true)}>

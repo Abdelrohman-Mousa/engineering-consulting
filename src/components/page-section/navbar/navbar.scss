@@ -82,15 +82,7 @@
             }
           }
        }
-       .menu-icon {
-
-         @include desktop {
-           display: none;
-         }
-         @include mobile {
-          display: block;
-         }
-       }
+       
        .theme {
          button {
            background-color: transparent;
@@ -107,6 +99,15 @@
          }
        }
      }
+     .menu-icon {
+
+         @include desktop {
+           display: none;
+         }
+         @include mobile {
+          display: block;
+         }
+       }
 }
 
 .lang-menu {
