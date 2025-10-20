@@ -41,6 +41,7 @@
      .nav-1 {
         display: flex;
         align-items: center;
+
          @include mobile {
           display: none;
          }
@@ -51,9 +52,11 @@
               justify-content: center;
               gap: 3rem;
               transition: 0.3s;
+
               @include tablet {
                 gap: 1rem;
               }
+
                li {
                    font-size: 1.2rem;
                    font-weight: 600;
@@ -62,10 +65,12 @@
                    &:hover {
                      color: #000000;
                    }
+
                    @include tablet {
                      font-size: 1rem;
                      font-weight: 500;
                    }
+
                 }
               }
           }
@@ -76,9 +81,11 @@
        justify-content: center;
        align-items: center;
        gap: 1rem;
+
        @include mobile {
         display: none;
       }
+
       @include tablet {
         display: none;
       }
@@ -133,7 +140,6 @@
         font-weight: 900;
         width: 45px;
         height: 45px;
-
       }
          @include desktop {
            display: none;

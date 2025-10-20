@@ -59,7 +59,12 @@ const [open, setOpen] = useState(false);
            <MenuIcon />
          </IconButton>
        </div>
-       <TemporaryDrawer open={open} setOpen={setOpen} />
+       <TemporaryDrawer
+         open={open}
+         setOpen={setOpen}
+         theme={theme}
+         toggleMode={toggle_mode}
+       />
 
     </div>
   )
