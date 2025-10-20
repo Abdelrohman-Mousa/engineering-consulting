@@ -12,6 +12,9 @@
     @include mobile {
       padding: 5px;
     }
+    @include tablet {
+      padding: 5px;
+    }
 
     .logo {
         display: flex;
@@ -175,6 +178,13 @@ body.dark .navbar {
        background-color: #2D274C;
        color: #ffffff;
   }
+  }
+
+  .menu-icon {
+    .menu-sidebar {
+      background-color: #2D274C;
+      color: #ffffff;
+    }
   }
 }
 
