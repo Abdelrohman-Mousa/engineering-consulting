@@ -55,7 +55,7 @@ const [open, setOpen] = useState(false);
 
       {/* Sidebar */}
        <div className="menu-icon">
-         <IconButton onClick={() => setOpen(true)}>
+         <IconButton onClick={() => setOpen(true)} className='menu-sidebar'>
            <MenuIcon />
          </IconButton>
        </div>

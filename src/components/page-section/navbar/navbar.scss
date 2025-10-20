@@ -9,6 +9,10 @@
     justify-content: space-between;
     transition: 0.3s;
 
+    @include mobile {
+      padding: 5px;
+    }
+
     .logo {
         display: flex;
         align-items: center;
@@ -16,11 +20,19 @@
           width: 45px;
           filter: invert(0); //color-image
           transition: 0.3s;
+
+           @include mobile {
+            width: 35px;
+           }
         }
 
         .title-logo {
            font-weight: 600;
            text-align: center;
+
+           @include mobile {
+            font-size: medium;
+           }
         }
      }
      .nav-1 {
@@ -29,12 +41,16 @@
          @include mobile {
           display: none;
          }
+         
         .links-page {
            ul {
               display: flex;
               justify-content: center;
               gap: 3rem;
               transition: 0.3s;
+              @include tablet {
+                gap: 1rem;
+              }
                li {
                    font-size: 1.2rem;
                    font-weight: 600;
@@ -42,6 +58,10 @@
                    color: rgb(29 26 26 / 88%);
                    &:hover {
                      color: #000000;
+                   }
+                   @include tablet {
+                     font-size: 1rem;
+                     font-weight: 500;
                    }
                 }
               }
@@ -54,8 +74,11 @@
        align-items: center;
        gap: 1rem;
        @include mobile {
-          display: none;
-         }
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
 
        .lang {
          .css-e34boy-MuiAvatar-root {
@@ -99,8 +122,16 @@
          }
        }
      }
+     //Sidebar
      .menu-icon {
+      .menu-sidebar{
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: 900;
+        width: 45px;
+        height: 45px;
 
+      }
          @include desktop {
            display: none;
          }
