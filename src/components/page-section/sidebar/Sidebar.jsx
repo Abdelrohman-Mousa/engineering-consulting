@@ -67,7 +67,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LanguageIcon from '@mui/icons-material/Language';
+import logo from '../../../assets/icons/logo.svg';
 import './sidebar.scss';
 import LanguagesMenu from '../../materialUI/LanguagesMenu';
 import { ShinyButton } from "@/components/ui/shiny-button";
@@ -89,7 +89,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
       <List>
         <ListItem disablePadding>
           <ListItemButton onClick={(e) => e.stopPropagation()}>
-            <ListItemIcon>
+            <ListItemIcon className='lang-sidebar'>
               {/* <LanguageIcon /> */}
               Select Language
             </ListItemIcon>
@@ -118,7 +118,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  <img src={logo} className='logo-sidebar' alt="logoSidebar" />
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>

@@ -5,6 +5,10 @@
   .MuiListItemButton-root:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+  
+  .logo-sidebar {
+    width: 25px;
+  }
 
   .sidebar-signin {
     margin-top: 20px;
@@ -27,4 +31,12 @@
 .dark .MuiDrawer-paper {
     background: linear-gradient(135deg, #1A172D, #2E2A4D) !important;
     color: #ffffff !important;
+}
+
+.dark .logo-sidebar {
+  filter: invert(1); //color-image
+}
+
+.dark .lang-sidebar {
+  color: #e3e3e3;    
 }
