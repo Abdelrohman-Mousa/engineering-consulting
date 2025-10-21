@@ -1,60 +1,3 @@
-// import * as React from 'react';
-// import Box from '@mui/material/Box';
-// import Drawer from '@mui/material/Drawer';
-// import List from '@mui/material/List';
-// import Divider from '@mui/material/Divider';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
-// import './sidebar.scss';
-
-
-// export default function TemporaryDrawer({ open, setOpen }) {
-//   const toggleDrawer = (newOpen) => () => {
-//     setOpen(newOpen);
-//   };
-
-//   const DrawerList = (
-//     <Box sx={{ width: 250 }} role="presentation" className='sidebar-menu' onClick={toggleDrawer(false)}>
-//       <List>
-//         {['HomePage', 'About US', 'Our Projects', 'Our Services', 'Contact US'].map((text, index) => (
-//           <ListItem key={text} disablePadding>
-//             <ListItemButton>
-//               <ListItemIcon>
-//                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-//               </ListItemIcon>
-//               <ListItemText primary={text} />
-//             </ListItemButton>
-//           </ListItem>
-//         ))}
-//       </List>
-//       <Divider />
-//       <List>
-//         {['All mail', 'Trash', 'Spam'].map((text, index) => (
-//           <ListItem key={text} disablePadding>
-//             <ListItemButton>
-//               <ListItemIcon>
-//                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-//               </ListItemIcon>
-//               <ListItemText primary={text} />
-//             </ListItemButton>
-//           </ListItem>
-//         ))}
-//       </List>
-//     </Box>
-//   );
-
-//   return (
-//     <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-//       {DrawerList}
-//     </Drawer>
-//   );
-// }
-
-
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -69,10 +12,13 @@ import MailIcon from '@mui/icons-material/Mail';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import logo from '../../../assets/icons/logo.svg';
 import './sidebar.scss';
+import { useTranslation } from 'react-i18next';
 import LanguagesMenu from '../../materialUI/LanguagesMenu';
 import { ShinyButton } from "@/components/ui/shiny-button";
 
 export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
+  const { t } =useTranslation();
+
   const toggleDrawer = (newOpen) => () => setOpen(newOpen);
 
   const DrawerList = (
@@ -91,7 +37,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
           <ListItemButton onClick={(e) => e.stopPropagation()}>
             <ListItemIcon className='lang-sidebar'>
               {/* <LanguageIcon /> */}
-              Select Language
+              {t("Selectdisplaylanguage")}
             </ListItemIcon>
             <ListItemText primary={<LanguagesMenu />} />
           </ListItemButton>
@@ -103,7 +49,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
               <DarkModeIcon className='icon-mode'/>
             </ListItemIcon>
             <ListItemText
-              primary={theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+              primary={theme === 'light' ? t('DarkMode') : t('LightMode')}
             />
           </ListItemButton>
         </ListItem>
@@ -113,7 +59,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
 
       {/* روابط الصفحات */}
       <List>
-        {['Home', 'About', 'Projects', 'Services', 'Contact'].map(
+        {[t('Home'), t('About'), t('Projects'), t('Services'), t('Contact')].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -131,7 +77,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
 
       {/* زر تسجيل الدخول */}
       <div className="sidebar-signin">
-        <ShinyButton>Sign In</ShinyButton>
+        <ShinyButton>{t("signIn")}</ShinyButton>
       </div>
     </Box>
   );

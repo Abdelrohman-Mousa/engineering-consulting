@@ -9,5 +9,12 @@
   "Araic": "Araic",
   "English": "English",
   "Franch": "Francais",
-  "Selectdisplaylanguage": "Select display language"
+  "Selectdisplaylanguage": "Select language",
+  "Home" :"Home Page",
+  "About" : "About US",
+  "Projects" : "Projects",
+  "Services" : "Services",
+  "Contact" : "Contact",
+  "DarkMode" : "Dark Mode",
+  "LightMode" : "Light Mode"
 }
