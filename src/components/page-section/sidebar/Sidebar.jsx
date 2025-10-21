@@ -100,7 +100,7 @@ export default function TemporaryDrawer({ open, setOpen, theme, toggleMode }) {
         <ListItem disablePadding>
           <ListItemButton onClick={toggleMode}>
             <ListItemIcon>
-              <DarkModeIcon />
+              <DarkModeIcon className='icon-mode'/>
             </ListItemIcon>
             <ListItemText
               primary={theme === 'light' ? 'Dark Mode' : 'Light Mode'}

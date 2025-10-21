@@ -10,6 +10,10 @@
     width: 25px;
   }
 
+  .icon-mode {
+     color: #000000;
+  }
+
   .sidebar-signin {
     margin-top: 20px;
     display: flex;
@@ -19,6 +23,7 @@
       width: 100%;
       padding: 10px;
       border-radius: 16px;
+
     }
   }
 }
@@ -37,6 +42,15 @@
   filter: invert(1); //color-image
 }
 
+.dark .icon-mode {
+  color: #e3e3e3;
+}
+
 .dark .lang-sidebar {
   color: #e3e3e3;    
+}
+
+.dark .sidebar-signin button {
+  background: linear-gradient(135deg, #5D3FD3, #8A2BE2);
+  color: #ffffff;
 }
