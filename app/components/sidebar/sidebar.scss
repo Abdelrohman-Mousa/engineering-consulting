@@ -1,0 +1,66 @@
+@use "../../../app/app" as *;
+
+.sidebar-menu {
+  display: none;
+  align-items: center;
+
+  .icon-button {
+    background-color: var(--background-button-light) !important;
+    color: var(--text-color-dark);
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+
+}
+.sidebar-box {
+  background-color: var(--background-light) !important;
+  color: var(--text-color-dark) !important;
+}
+.close-sidebar {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+
+.signIn-sidebar {
+  background-color: var(--background-button-light);
+  color: var(--text-color-dark);
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  width: 100%;
+  @include tablet {
+    display: none;
+  }
+}
+}
+
+//Dark Mode
+body.dark {
+  .sidebar-menu {
+    .icon-button {
+      background-color: var(--background-button-dark) !important;
+      color: var(--text-color-light) !important;
+    }
+  }
+  .sidebar-box {
+    background-color: var(--background-dark) !important;
+    color: var(--text-color-light) !important;
+  }
+  .close-sidebar .signIn-sidebar {
+    background-color: var(--background-navbar-dark) !important;
+    color: var(--text-color-light) !important;
+  }
+}

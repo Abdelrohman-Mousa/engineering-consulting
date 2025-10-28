@@ -1,0 +1,180 @@
+@use "../../../app/app" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--background-navbar-light);
+  color: var(--text-color-dark);
+  transition: all 0.3s ease;
+
+  @include mobile {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease;
+
+      @include mobile {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    h3 {
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.3;
+
+      @include mobile {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .links-pages {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      li {
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: #000111;
+          transition: width 0.3s ease;
+        }
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.62);
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include mobile {
+      gap: 1rem;
+    }
+
+    @include tablet {
+      gap: 1rem;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    .lang {
+      .button-lang {
+        background-color: var(--background-button-light);
+        color: var(--text-color-dark);
+        padding: 6px 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 12px;
+
+        @include mobile {
+          font-weight: 500;
+        }
+      }
+
+    }
+
+    .mode {
+      cursor: pointer;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .signIn {
+      background-color: var(--background-button-light);
+      color: var(--text-color-dark);
+      padding: 8px 10px;
+      font-size: 1rem;
+      border-radius: 12px;
+      font-weight: 500;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+//Dark Mode
+body.dark {
+  .navbar {
+    background-color: var(--background-navbar-dark);
+    color: var(--text-color-light);
+
+    .logo img {
+        filter: invert(1);
+    }
+    .links-pages ul li {
+      &:after {
+        background-color: #cccccc;
+      }
+      &:hover {
+        color: #cccccc;
+      }
+    }
+    .lang {
+      .button-lang {
+        background-color: var(--background-button-dark);
+        color: var(--text-color-light);
+       }
+      .menu-lang {
+        .MuiPaper-root {
+          background-color: var(--background-button-dark) !important;
+          color: var(--text-color-light);
+        }
+      }
+    }
+    .signIn {
+      background-color: var(--background-button-dark);
+      color: var(--text-color-light);
+    }
+  }
+}

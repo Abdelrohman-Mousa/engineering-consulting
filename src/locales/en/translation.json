@@ -1,0 +1,20 @@
+{
+  "logo": "Engineering <br /> Consulting",
+  "HomePage": "Home Page",
+  "AboutUS": "About US",
+  "OurProjects": "Our Projects",
+  "OurServices": "Our Services",
+  "ContactUS": "Contact US",
+  "signIn": "sign in",
+  "Arabic": "Araic",
+  "English": "English",
+  "Franch": "Francais",
+  "Selectdisplaylanguage": "Select language",
+  "Home" :"Home Page",
+  "About" : "About US",
+  "Projects" : "Projects",
+  "Services" : "Services",
+  "Contact" : "Contact",
+  "DarkMode" : "Dark Mode",
+  "LightMode" : "Light Mode"
+}

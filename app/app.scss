@@ -1,0 +1,167 @@
+/* 🧩 Tailwind Utilities (keep it at the very top) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================
+   🎨 Tailwind Theme Variables (Dark / Light)
+   =================================================== */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+/* ===================================================
+   🌈 Custom Design Variables (extra colors, fonts, etc.)
+   =================================================== */
+:root {
+  --background-light: #f8f9fa;
+  --text-color-dark: #000000;
+  --background-navbar-light: rgba(179, 175, 175, 0.53);
+  --background-button-light: #c5c3c3;
+
+  --background-dark: #1a172d;
+  --text-color-light: #ffffff;
+  --background-navbar-dark: #3b346a;
+  --background-button-dark: #2d274c;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+}
+
+/* ===================================================
+   🧱 Global Reset
+   =================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-color-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-color-light);
+}
+
+/* Links & Buttons */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+//.app {
+//  padding: 0.5rem 1rem;
+//  .@include mobile {
+//    padding: 0.5rem;
+//  }
+//}
+
+.flag-lang {
+  width: 30px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-color-light);
+}
+
+// responsive
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 739px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+.app {
+  padding: 0.5rem 1rem;
+  @include mobile {
+    padding: 0.5rem 0.3rem;
+  }
+}

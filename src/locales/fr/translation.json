@@ -1,0 +1,20 @@
+{
+  "logo": "Consultation en<br /> ingénierie",
+  "HomePage": "Page d’accueil",
+  "AboutUS": "À propos de nous",
+  "OurProjects": "Nos projets",
+  "OurServices": "Nos services",
+  "ContactUS": "Contactez-nous",
+  "signIn": "Se connecter",
+  "Arabic": "Arabe",
+  "English": "Anglais",
+  "Franch": "Français",
+  "Selectdisplaylanguage": "Langue affichage",
+  "Home" :"Accueil",
+  "About" : "À propos",
+  "Projects" : "Projets",
+  "Services" : "Services",
+  "Contact" : "Contact",
+  "DarkMode" : "Mode sombre",
+  "LightMode" : "Mode clair"
+}
