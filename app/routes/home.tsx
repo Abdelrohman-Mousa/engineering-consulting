@@ -8,13 +8,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 import React from 'react'
+import HeroSection from "~/routes/hero-section/HeroSection";
 
 
 const Home = () => {
   return (
-      <div style={{padding: "3rem"}}>
-       <h1>Home</h1>
-
+      <div>
+       <HeroSection />
       </div>
   )
 }

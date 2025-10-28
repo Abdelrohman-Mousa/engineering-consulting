@@ -2,30 +2,26 @@ import './navbar.scss';
 import logo from "../../../public/assets/icons/logo.svg";
 import darkMode from "../../../public/assets/icons/dark-mode.svg";
 import lightMode from "../../../public/assets/icons/light-mode.svg";
-import {ShinyButton} from "~/components/ui/shiny-button";
+import { ShinyButton } from "~/components/ui/shiny-button";
 import ButtonLanguages from "../../../src/material-ui/ButtonLanguages";
-import {useTranslation} from "react-i18next";
-import {useEffect, useState} from "react";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 import TemporaryDrawer from "~/components/sidebar/TemporaryDrawer";
+import { Link, useLocation } from "react-router"; // ← مهم جدًا
 
 const Navbar = () => {
     const { t } = useTranslation();
+    const location = useLocation(); // ← عشان نعرف الصفحة الحالية
 
     const [isClient, setIsClient] = useState(false);
     const [themeMode, setThemeMode] = useState<'light' | 'dark'>('light');
 
     useEffect(() => {
         setIsClient(true);
-
-        // نجيب الوضع من localStorage لو موجود
         const savedMode = localStorage.getItem('themeMode') as 'light' | 'dark' | null;
         if (savedMode) {
             setThemeMode(savedMode);
-            if (savedMode === 'dark') {
-                document.body.classList.add('dark');
-            } else {
-                document.body.classList.remove('dark');
-            }
+            document.body.classList.toggle('dark', savedMode === 'dark');
         }
     }, []);
 
@@ -33,30 +29,38 @@ const Navbar = () => {
         const newMode = themeMode === 'light' ? 'dark' : 'light';
         setThemeMode(newMode);
         localStorage.setItem('themeMode', newMode);
-
-        if (newMode === 'dark') {
-            document.body.classList.add('dark');
-        } else {
-            document.body.classList.remove('dark');
-        }
+        document.body.classList.toggle('dark', newMode === 'dark');
     };
 
-    if (!isClient) return null; // أو Skeleton Loader
+    if (!isClient) return null;
+
+    const links = [
+        { path: "/", label: t("HomePage") },
+        { path: "/about", label: t("AboutUS") },
+        { path: "/projects", label: t("OurProjects") },
+        { path: "/services", label: t("OurServices") },
+        { path: "/contact", label: t("ContactUS") },
+    ];
 
     return (
         <div className="navbar">
             <div className="logo">
                 <img src={logo} alt="logo" />
-                <h3 className="title-logo" dangerouslySetInnerHTML={{ __html: t("logo") }}></h3>
+                <h3 className="title-logo" dangerouslySetInnerHTML={{ __html: t("logo") }} />
             </div>
 
             <div className="links-pages">
                 <ul>
-                    <li><a href="#">{t("HomePage")}</a></li>
-                    <li><a href="#">{t("AboutUS")}</a></li>
-                    <li><a href="#">{t("OurProjects")}</a></li>
-                    <li><a href="#">{t("OurServices")}</a></li>
-                    <li><a href="#">{t("ContactUS")}</a></li>
+                    {links.map(link => (
+                        <li key={link.path}>
+                            <Link
+                                to={link.path}
+                                className={location.pathname === link.path ? "active" : ""}
+                            >
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
@@ -65,13 +69,14 @@ const Navbar = () => {
                     <ButtonLanguages />
                 </div>
 
-                <div className="mode" onClick={toggleTheme} >
-                    <img src={themeMode === 'light' ? darkMode : lightMode} alt="mode"/>
+                <div className="mode" onClick={toggleTheme}>
+                    <img src={themeMode === 'light' ? darkMode : lightMode} alt="mode" />
                 </div>
+                <Link to="/signin">
+                    <ShinyButton className="signIn">{t("signIn")}</ShinyButton>
+                </Link>
 
-                <ShinyButton className="signIn">{t("signIn")}</ShinyButton>
-
-                {/*Sidebar-Menu*/}
+                {/* Sidebar Menu */}
                 <div className="sidebar-menu">
                     <TemporaryDrawer />
                 </div>
