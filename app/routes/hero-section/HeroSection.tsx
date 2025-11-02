@@ -9,7 +9,6 @@ import arrow from "public/assets/icons/right-arrow.svg";
 import video from "public/assets/video/video-build.mp4";
 import HalfRating from "../../../src/material-ui/HalfRating";
 import {ShinyButton} from "~/components/ui/shiny-button";
-import SplitText from "../../../src/react-bit-ui/SplitText";
 import {motion} from "framer-motion";
 
 const textVariants = {
@@ -52,20 +51,7 @@ const HeroSection = () => {
         <div className="hero-section">
             <div className="hero-section_content">
                 <div className="title">
-                    {/*<h1>We build your ideas with an integrated <br/> engineering vision</h1>*/}
-                    <SplitText
-                        text={`We build your ideas with an integrated engineering vision`}
-                        className="text-3xl font-bold text-center "
-                        delay={50}
-                        duration={0.3}
-                        ease="power3.out"
-                        splitType="chars"
-                        from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 1, y: 0 }}
-                        threshold={0.1}
-                        rootMargin="-100px"
-                        textAlign="center"
-                    />
+                    <h1>We build your ideas with an integrated <br/> engineering vision</h1>
                 </div>
 
                 <motion.div className="images-small"
