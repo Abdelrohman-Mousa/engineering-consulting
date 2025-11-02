@@ -51,7 +51,7 @@ const HeroSection = () => {
         <div className="hero-section">
             <div className="hero-section_content">
                 <div className="title">
-                    <h1>We build your ideas with an integrated <br/> engineering vision</h1>
+                    <h1>We build your ideas with an integrated engineering vision</h1>
                 </div>
 
                 <motion.div className="images-small"
@@ -81,14 +81,14 @@ const HeroSection = () => {
                 <div className="button-hero-section">
                     <ShinyButton >
                         <div className="button-icon">
-                        <h4>Button Consulting</h4>
+                        <h4>Request Consultation</h4>
                             <div className="img-wrapper">
                              <img src={arrow} alt="arrow"/>
                             </div>
                         </div>
                     </ShinyButton>
 
-                    <h3 className="desc">Innovative engineering solutions that combine quality and professionalism to turn your ideas into reality</h3>
+                    <h3 className="desc">Don’t postpone your project — consult now and get an initial assessment with actionable steps within 48 hours.</h3>
                 </div>
             </div>
 
