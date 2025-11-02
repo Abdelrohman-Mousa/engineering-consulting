@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/build-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/building.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/buld-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/consult.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/people1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/people2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/people3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ui/shiny-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/shiny-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/about/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-bit-ui/SplitText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-bit-ui/SplitText.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +102,7 @@
       <workItem from="1761682089355" duration="13281000" />
       <workItem from="1761772142303" duration="11878000" />
       <workItem from="1761849927842" duration="11106000" />
-      <workItem from="1762012822457" duration="3945000" />
+      <workItem from="1762012822457" duration="6716000" />
     </task>
     <servers />
   </component>
