@@ -10,6 +10,7 @@ import video from "public/assets/video/video-build.mp4";
 import HalfRating from "../../../src/material-ui/HalfRating";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {motion} from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 const textVariants = {
     initial: {
@@ -46,12 +47,13 @@ const listVariants = {
 
 
 const HeroSection = () => {
+    const { t } = useTranslation();
 
     return (
         <div className="hero-section">
             <div className="hero-section_content">
                 <div className="title">
-                    <h1>We build your ideas with an integrated engineering vision</h1>
+                    <h1>{t("title-1-HeroSection")}</h1>
                 </div>
 
                 <motion.div className="images-small"
@@ -74,21 +76,21 @@ const HeroSection = () => {
                             </div>
                         </div>
                         <div className="text">
-                            <h4>50+ Positive Reviews we Achived</h4>
+                            <h4>{t("client")}</h4>
                         </div>
                     </div>
                 </motion.div>
                 <div className="button-hero-section">
                     <ShinyButton >
                         <div className="button-icon">
-                        <h4>Request Consultation</h4>
+                        <h4>{t("button-hero-section")}</h4>
                             <div className="img-wrapper">
                              <img src={arrow} alt="arrow"/>
                             </div>
                         </div>
                     </ShinyButton>
 
-                    <h3 className="desc">Don’t postpone your project — consult now and get an initial assessment with actionable steps within 48 hours.</h3>
+                    <h3 className="desc">{t("title-2-HeroSection")}</h3>
                 </div>
             </div>
 
@@ -104,15 +106,13 @@ const HeroSection = () => {
                     <source src={video} type="video/mp4"/>
                 </video>
                 <div className="description">
-                    <h3>
-                        Innovative engineering consultancy delivering architectural, structural, electrical, and mechanical solutions — from design to supervision and project management.
-                    </h3>
+                    <h3>{t("title-3-HeroSection")}</h3>
                     <hr style={{height: "2px", backgroundColor: "rgba(7,7,7,0.11)", margin: "5px 0"}}/>
                     <h4 className="happy-client">
                         <div>
-                        <span>10K</span> Happy Clients
+                        <span>10K</span> {t("HappyClients")}
                         </div>
-                        <p>Completing there dream with us</p>
+                        <p>{t("p-heroSection")}</p>
                     </h4>
                 </div>
 

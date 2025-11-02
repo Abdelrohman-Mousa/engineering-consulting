@@ -9,6 +9,9 @@
       <change beforePath="$PROJECT_DIR$/app/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/fr/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
       <workItem from="1761682089355" duration="13281000" />
       <workItem from="1761772142303" duration="11878000" />
       <workItem from="1761849927842" duration="11106000" />
-      <workItem from="1762012822457" duration="9713000" />
+      <workItem from="1762012822457" duration="15719000" />
     </task>
     <servers />
   </component>
