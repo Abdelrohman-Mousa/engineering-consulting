@@ -70,7 +70,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="mode" onClick={toggleTheme}>
+                    <ShinyButton>
                     <img src={themeMode === 'light' ? darkMode : lightMode} alt="mode" />
+                    </ShinyButton>
                 </div>
                 <Link to="/signin">
                     <ShinyButton className="signIn">{t("signIn")}</ShinyButton>

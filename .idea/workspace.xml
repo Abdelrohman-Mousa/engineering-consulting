@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/build-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/building.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/buld-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/consult.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/people1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/people2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/people3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ui/shiny-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/shiny-button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +67,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "E:\\projects\\engineering-consulting\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/video&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\projects\\engineering-consulting\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\public\assets\video" />
+      <recent name="E:\projects\engineering-consulting\public\assets\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\app\components" />
     </key>
   </component>
@@ -96,7 +113,11 @@
       <workItem from="1761346602563" duration="5428000" />
       <workItem from="1761396228746" duration="16942000" />
       <workItem from="1761522856458" duration="9011000" />
-      <workItem from="1761575595439" duration="32296000" />
+      <workItem from="1761575595439" duration="32444000" />
+      <workItem from="1761682089355" duration="13281000" />
+      <workItem from="1761772142303" duration="11878000" />
+      <workItem from="1761849927842" duration="11106000" />
+      <workItem from="1762012822457" duration="3945000" />
     </task>
     <servers />
   </component>
