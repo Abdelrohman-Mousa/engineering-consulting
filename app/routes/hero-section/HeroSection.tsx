@@ -1,12 +1,12 @@
 import './heroSection.scss';
-import build from "public/assets/images/build-1.jpg";
-import building from "public/assets/images/buld-2.jpg";
-import consult from "public/assets/images/consult.jpg";
-import people1 from "public/assets/images/people1.jpg";
-import people2 from "public/assets/images/people2.jpg";
-import people3 from "public/assets/images/people3.jpg";
-import arrow from "public/assets/icons/right-arrow.svg";
-import video from "public/assets/video/video-build.mp4";
+import build from "/assets/images/build-1.webp";
+import building from "/assets/images/buld-2.webp";
+import consult from "/assets/images/consult.webp";
+import people1 from "/assets/images/people7.jpg";
+import people2 from "/assets/images/woman.jpg";
+import people3 from "/assets/images/people-3.jpg";
+import arrow from "/assets/icons/right-arrow.svg";
+import video from "/assets/video/video-build.mp4";
 import HalfRating from "../../../src/material-ui/HalfRating";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {motion} from "framer-motion";
@@ -115,7 +115,6 @@ const HeroSection = () => {
                         <p>{t("p-heroSection")}</p>
                     </h4>
                 </div>
-
             </motion.div>
         </div>
     )

@@ -6,12 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sidebar/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar/sidebar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/HeroSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section/heroSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/build-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/building.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/buld-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/consult.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/people1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/people2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/people3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/fr/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/HalfRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/HalfRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +81,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/video&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/icons&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,10 +94,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\engineering-consulting\public\assets\video" />
+      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\public\assets\images" />
+      <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\public\assets\images" />
       <recent name="E:\projects\engineering-consulting\public" />
       <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\app\components" />
@@ -108,7 +126,12 @@
       <workItem from="1761682089355" duration="13281000" />
       <workItem from="1761772142303" duration="11878000" />
       <workItem from="1761849927842" duration="11106000" />
-      <workItem from="1762012822457" duration="15719000" />
+      <workItem from="1762012822457" duration="16294000" />
+      <workItem from="1762219999593" duration="17882000" />
+      <workItem from="1762307765333" duration="12678000" />
+      <workItem from="1762401951964" duration="28310000" />
+      <workItem from="1762604771386" duration="13488000" />
+      <workItem from="1762654697770" duration="8103000" />
     </task>
     <servers />
   </component>

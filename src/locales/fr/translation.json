@@ -23,7 +23,81 @@
   "client" : "Plus de 50 avis positifs que nous avons obtenus.",
   "button-hero-section" : "Demander une consultation",
   "HappyClients" : "Clients Satisfaits",
-  "p-heroSection" : "Réalisant leurs rêves avec nous"
+  "p-heroSection" : "Réalisant leurs rêves avec nous",
+  "p-1" : "Nous offrons des services",
+  "p-2" : "de conseil en ingénierie",
+  "p-3" : "complets à toutes les étapes,",
+  "p-4" : "de la conception à la mise en œuvre",
+  "services-1" : "Conception architecturale",
+  "services-2" : "Conception structurelle",
+  "services-3" : "Conception électrique et mécanique",
+  "services-4" : "Préparation et exécution des dessins",
+  "services-5" : "Supervision de l’exécution",
+  "services-6" : "Gestion de projet",
+  "services-7" : "Consultations juridiques et permis",
+  "who-we-h1" : "Qui nous sommes et ce que nous faisons pour concrétiser votre vision",
+  "who-we-h2" : "Qui nous sommes:",
+  "what-we-h2" : "Ce que nous faisons:",
+  "who-p" : "Nous sommes un cabinet de conseil en ingénierie spécialisé dans la fourniture de solutions innovantes et complètes en conception architecturale, structurelle, électrique et mécanique. Notre objectif est de transformer les idées de nos clients en projets réels alliant qualité, précision et professionnalisme.",
+  "what-p" : "Nous offrons nos services depuis la préparation des plans et des conceptions, en passant par la supervision et la gestion des projets, jusqu’aux consultations juridiques et à l’obtention des licences. Notre équipe d’ingénieurs et d’experts travaille avec un haut niveau d’expérience pour garantir les meilleurs résultats à chaque étape du projet.",
+  "who-button" : "En savoir plus sur nous",
+  "mini-box" : "Clients satisfaits dans l’ensemble",
+  "button-team" : "Lancez votre prochain projet avec nous",
+  "tittle-team" : "Construire l’avenir avec une équipe visionnaire",
+  "p-1-team" : " Notre équipe talentueuse allie créativité, expérience et précision pour offrir des solutions d’ingénierie innovantes.",
+  "counter" : "Ingénieurs experts",
+  "counter-2" : "Projets réalisés",
+  "btn-1-team" : "Commencez votre projet",
+  "btn-2-team" : "Contactez-nous",
+  "tittle-2-team" : "Rencontrez notre équipe d’experts",
+  "pra-team" : "Notre équipe est composée d’ingénieurs et de spécialistes hautement qualifiés en conception architecturale, structurelle, électrique et mécanique.\nChaque membre apporte des années d’expérience et une passion pour l’innovation, garantissant que chaque projet que nous réalisons respecte les normes les plus élevées de qualité et de précision.\nEnsemble, nous combinons expertise, créativité et esprit d’équipe pour transformer les idées en projets réels et réussis.",
+  "tittle-client" : "Avis des clients",
+  "p-client" : "Nous sommes fiers de voir la satisfaction de nos clients se refléter dans leurs témoignages.\nLeurs mots nous inspirent à continuer d’offrir l’excellence dans chaque projet.",
+  "p-card-1" : "Collaborer avec cette équipe d’ingénierie a dépassé mes attentes.\nLeur précision, leur créativité et leur dévouement ont transformé notre vision en un projet remarquable !\nJ’apprécie vraiment leur professionnalisme et leur engagement du début à la fin.",
+  "p-card-2" : "Travailler avec cette équipe a été une expérience exceptionnelle. Leur professionnalisme, leur souci du détail et leur approche innovante ont rendu tout le processus fluide et réussi. Je les recommande vivement à toute personne à la recherche de solutions d’ingénierie fiables et créatives.",
+  "name-client-1" : "Sara Ali",
+  "name-client-2" : "Abdelrohman Marei",
+  "job-client-1" : "Architecte principale",
+  "job-client-2" : "Propriétaire du projet",
+  "footer-pra" : "Nous offrons des solutions d’ingénierie innovantes et précises.",
+  "footer-btn" : "Obtenez une consultation gratuite",
+  "footer-links" : "Liens rapides",
+  "footer-links-1" : "À propos de nous",
+  "footer-links-2" : "Services",
+  "footer-links-3" : "Projets",
+  "footer-links-4" : "Conseil",
+  "footer-contact" : "Contact",
+  "footer-social-1" : "Facebook",
+  "footer-social-2" : "Instagram",
+  "footer-social-3" : "LinkedIn",
+  "all-rights" : "© 2025 Engineering Consulting. Tous droits réservés.\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

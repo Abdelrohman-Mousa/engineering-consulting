@@ -1,9 +1,10 @@
-@use "../../../app/app" as *;
+@use "../../index" as *;
 
 .hero-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 0;
   width: 100%;
   height: auto;
   margin-top: 2rem;
@@ -20,7 +21,7 @@
   .hero-section_content {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 68%;
 
     @include mobile {
       width: 100%;
@@ -46,7 +47,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
       position: relative;
 
       img {
@@ -164,7 +165,7 @@
   }
 
   .hero-section_image {
-    width: 35%;
+    width: 38%;
     height: 600px; // أو أي قيمة تناسبك
     display: flex;
     flex-direction: column;

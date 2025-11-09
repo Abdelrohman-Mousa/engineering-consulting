@@ -1,7 +1,4 @@
 import './navbar.scss';
-import logo from "../../../public/assets/icons/logo.svg";
-import darkMode from "../../../public/assets/icons/dark-mode.svg";
-import lightMode from "../../../public/assets/icons/light-mode.svg";
 import { ShinyButton } from "~/components/ui/shiny-button";
 import ButtonLanguages from "../../../src/material-ui/ButtonLanguages";
 import { useTranslation } from "react-i18next";
@@ -45,7 +42,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src={logo} alt="logo" />
+                <img src="/assets/icons/logo.svg" alt="logo" />
                 <h3 className="title-logo" dangerouslySetInnerHTML={{ __html: t("logo") }} />
             </div>
 
@@ -71,7 +68,7 @@ const Navbar = () => {
 
                 <div className="mode" onClick={toggleTheme}>
                     <ShinyButton>
-                    <img src={themeMode === 'light' ? darkMode : lightMode} alt="mode" />
+                        <img src={themeMode === 'light' ? "/assets/icons/dark-mode.svg" : "/assets/icons/light-mode.svg"} alt="mode" />
                     </ShinyButton>
                 </div>
                 <Link to="/signin">

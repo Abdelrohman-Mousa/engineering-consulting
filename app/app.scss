@@ -1,3 +1,5 @@
+@use './index' as *;
+
 /* 🧩 Tailwind Utilities (keep it at the very top) */
 @tailwind base;
 @tailwind components;
@@ -58,9 +60,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  .theme {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  }
 }
-
-
 
 /* ===================================================
    🌈 Custom Design Variables (extra colors, fonts, etc.)
@@ -122,13 +126,6 @@ button {
   cursor: pointer;
 }
 
-//.app {
-//  padding: 0.5rem 1rem;
-//  .@include mobile {
-//    padding: 0.5rem;
-//  }
-//}
-
 .flag-lang {
   width: 30px;
   height: 25px;
@@ -138,25 +135,6 @@ button {
 body.dark {
   background-color: var(--background-dark);
   color: var(--text-color-light);
-}
-
-// responsive
-@mixin mobile {
-  @media (max-width: 738px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: 739px) and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: 1025px) {
-    @content;
-  }
 }
 
 .app {
