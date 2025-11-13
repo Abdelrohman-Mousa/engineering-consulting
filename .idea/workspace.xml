@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/hero-section-2/hero-section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section-2/hero-section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/fr/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/ButtonLanguages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ButtonLanguages.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +70,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,8 +83,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\public\assets\images" />
+      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -110,7 +120,9 @@
       <workItem from="1762307765333" duration="12678000" />
       <workItem from="1762401951964" duration="28310000" />
       <workItem from="1762604771386" duration="13488000" />
-      <workItem from="1762654697770" duration="9391000" />
+      <workItem from="1762654697770" duration="23750000" />
+      <workItem from="1762919894642" duration="20833000" />
+      <workItem from="1763022587110" duration="5217000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,11 @@
 import './footer.scss';
-import logo from "public/assets/icons/logo.svg";
-import email from "public/assets/icons/email-1.svg";
-import phone from "public/assets/icons/phone-1.svg";
-import location from "public/assets/icons/location-1.svg";
-import facebook from "public/assets/icons/facebook-1.svg";
-import linkedin from "public/assets/icons/linkedin-1.svg";
-import insta from "public/assets/icons/instagram-2.svg";
+import logo from "/assets/icons/logo.svg";
+import email from "/assets/icons/email-1.svg";
+import phone from "/assets/icons/phone-1.svg";
+import location from "/assets/icons/location-1.svg";
+import facebook from "/assets/icons/facebook-1.svg";
+import linkedin from "/assets/icons/linkedin-1.svg";
+import insta from "/assets/icons/instagram-2.svg";
 
 
 import {useTranslation} from "react-i18next";

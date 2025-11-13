@@ -6,6 +6,7 @@ import meat from "/assets/images/meat.jpg";
 import {useTranslation} from "react-i18next";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {motion} from "framer-motion";
+import {NumberTicker} from "~/components/ui/number-ticker";
 
 const textVariants = {
     initial: {
@@ -115,8 +116,8 @@ const HeroSection2 = () => {
                         <p>{t("p-1-team")}</p>
 
                         <div className="stats">
-                            <div className="btn-team"><strong>30+</strong><span>{t("counter")}</span></div>
-                            <div className="btn-team"><strong>500+</strong><span>{t("counter-2")}</span></div>
+                            <div className="btn-team"><strong className="strong"><NumberTicker className="strong" value={30} />+ </strong><span>{t("counter")}</span></div>
+                            <div className="btn-team"><strong className="strong"><NumberTicker className="strong" value={500} />+</strong><span>{t("counter-2")}</span></div>
                         </div>
 
                         <div className="button-team">
