@@ -92,7 +92,48 @@
   "team-jop1" : "Architecte principal",
   "team-jop2" : "Architecte en chef",
   "team-jop3" : "Chef de projet",
-  "team-jop4" : "Ingénieur structure senior"
+  "team-jop4" : "Ingénieur structure senior",
+  "signIn-text" : "Se connecter avec un e-mail",
+  "signIn-para" : "Créez un nouveau document pour rassembler vos mots, vos données et vos équipes au même endroit. Gratuitement.",
+  "email" : "E-mail",
+  "password" : "Mot de passe",
+  "signIn-button" : "Se connecter",
+  "signIn-use" : "Ou connectez-vous avec",
+  "signIn-google" : "Se connecter avec Google",
+  "ContactUs" : "Contactez-nous",
+  "contact-text" : "Contactez notre équipe",
+  "contact-para-1" : "Nous sommes ici pour répondre à vos questions, discuter de votre projet et vous aider à trouver les meilleures solutions d’ingénierie adaptées à vos besoins.",
+  "contact-para-2" : "Contactez-nous, et commençons à créer quelque chose de remarquable qui transforme votre vision en une réalité tangible.",
+  "contact-form-text" : "Parlons de votre projet",
+  "from-name" : "Nom",
+  "from-name-1" : "Votre nom complet",
+  "from-email" : "Adresse e-mail",
+  "from-email-1" : "Nous vous répondrons ici",
+  "from-phone" : "Numéro de téléphone",
+  "from-company" : "Société / Organisation",
+  "from-company-1" : "Faites-nous savoir qui vous représentez",
+  "from-subject" : "Sujet",
+  "from-subject-1" : "De quoi s'agit-il ?",
+  "from-Message" : "Message",
+  "from-Message-1" : "Dites-nous comment nous pouvons vous aider",
+  "Send-Message" : "Envoyer le message",
+  "map-text" : "Vous préférez une approche directe ?",
+  "map-time" : "Du lundi au vendredi, de 9h à 18h (GMT)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

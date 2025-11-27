@@ -7,6 +7,8 @@ import {useTranslation} from "react-i18next";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {motion} from "framer-motion";
 import {NumberTicker} from "~/components/ui/number-ticker";
+import { Link } from "react-router-dom";
+
 
 const textVariants = {
     initial: {
@@ -122,7 +124,9 @@ const HeroSection2 = () => {
 
                         <div className="button-team">
                             <ShinyButton className="btnx-1">{t("btn-1-team")}</ShinyButton>
+                            <Link to="/contact">
                             <button className="btnx-2">{t("btn-2-team")}</button>
+                            </Link>
                         </div>
                     </div>
 

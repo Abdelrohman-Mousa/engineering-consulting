@@ -20,6 +20,7 @@ import team3 from "/assets/images/team3.jpg";
 import team4 from "/assets/images/team4.jpg";
 import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
+import { Link } from "react-router-dom";
 
 
 const textVariants = {
@@ -109,7 +110,9 @@ const About = () => {
                         <img src={location} alt="loation"/>
                         <p>{t("aboutP4")}</p>
                     </div>
+                    <Link to="/contact">
                     <ShinyButton className="about-btn">{t("ContactUS")}</ShinyButton>
+                    </Link>
                 </div>
             </motion.div>
 
