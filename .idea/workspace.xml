@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects/Projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/projects/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects/project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +128,7 @@
       <workItem from="1765023084230" duration="14493000" />
       <workItem from="1765203366410" duration="21490000" />
       <workItem from="1765462057447" duration="21811000" />
-      <workItem from="1765638770076" duration="6937000" />
+      <workItem from="1765638770076" duration="8098000" />
     </task>
     <servers />
   </component>

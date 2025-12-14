@@ -50,6 +50,9 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     margin-top: 2rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
 
     .projects-card {
       padding: 1rem;
@@ -57,7 +60,7 @@
       transition: all 0.3s ease;
       width: 500px;
       @include mobile {
-        width: 95%;
+        width: 100%;
       }
       @include tablet {
         width: 100%;
