@@ -118,5 +118,23 @@
   "from-Message-1" : "Tell us how we can help",
   "Send-Message" : "Send Message",
   "map-text" : "Prefer a Direct Approach?",
-  "map-time" : "Monday to Friday, 9 AM – 6 PM (GMT)"
+  "map-time" : "Monday to Friday, 9 AM – 6 PM (GMT)",
+
+  "project_1_name": "Modern Villa",
+  "project_1_category": "Residential",
+  "project_1_description": "A modern residential villa project with luxury finishing.",
+  "project_1_client": "Private Project",
+  "project_1_location": "Cairo, Egypt",
+
+  "project_1_supervisor_name_1": "Eng. Ahmed Samir",
+  "project_1_supervisor_name_2": "Eng. Omar Khaled",
+  "project_1_supervisor_name_3": "Eng. Sara Adel",
+
+  "project_1_supervisor_role_1": "Project Manager",
+  "project_1_supervisor_role_2": "Senior Structural Engineer",
+  "project_1_supervisor_role_3": "Quality Control Engineer",
+
+  "project_1_big_description": "This project focuses on delivering a complete engineering solution that includes site evaluation, architectural planning, and structural design. The work covers preparing accurate drawings, ensuring compliance with engineering standards, and providing technical guidance throughout the project's development. Our goal was to create a balanced design that combines functionality, safety, and visual harmony while addressing the client’s specific requirements. Through careful analysis and modern engineering practices, we ensured that the project is both efficient and durable, offering high performance and long-term stability."
+
+
 }

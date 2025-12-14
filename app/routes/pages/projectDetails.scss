@@ -1,0 +1,282 @@
+@use "../../index" as *;
+
+.project-details {
+  padding: 40px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  border-radius: 1rem;
+  @include mobile {
+    padding: 10px;
+  }
+  @include tablet {
+    padding: 20px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+
+    .left-section {
+     .hero-section {
+       position: relative;
+       overflow: hidden;
+      .hero-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 25px;
+
+        @include mobile {
+          height: 300px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+      }
+       .hero-text {
+         position: absolute;
+         top: 5%;
+         right: 1%;
+         width: 50%;
+         background-color: rgba(255, 255, 255, 0.56);
+         padding: 10px;
+         border-radius: 1rem;
+         p {
+           font-size: 1.5rem;
+           font-weight: 600;
+           @include mobile {
+             font-size: 1.2rem;
+           }
+         }
+       }
+     }
+      .explore-section {
+        .project-description {
+          display: flex;
+          flex-direction: column;
+          gap: 2.4rem;
+          .description-title h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          .description-content p {
+            font-size: 1.1rem;
+          }
+          .description-btn {
+            display: flex;
+            justify-content: center;
+            .button {
+              background-color: var(--background-button-light);
+              padding: 0.2rem 0.5rem;
+              border-radius: 1rem;
+              font-size: 1.1rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .right-section {
+      .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .stats-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          justify-content: center;
+          @include mobile {
+            grid-template-columns: 1fr;
+          }
+        }
+        .stats-card {
+          background: #fff;
+          border-radius: 20px;
+          border: 1px solid #eee;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+
+          .title-icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+
+            .icon {
+              background-color: #000;
+              padding: 5px;
+              border-radius: 50%;
+              img {
+                width: 25px;
+                height: 25px;
+                filter: invert(1);
+              }
+            }
+          }
+          .basic-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+      }
+      //project-supervisors
+      .project-supervisors {
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+        .supervisors-title h1 {
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        .supervisors-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1rem;
+          justify-content: center;
+          @include mobile {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .supervisor-card {
+            display: flex;
+            align-items: stretch;
+            .supervisor-img {
+              border: 1px solid #eee;
+              border-radius: 1rem;
+              width: 80%;
+
+              img {
+                border-radius: 1rem;
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                object-position: top;
+              }
+              .supervisor-info {
+                padding: 5px;
+                p {
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 5px;
+
+                }
+                span {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+          .supervisors-btn {
+            display: flex;
+            justify-content: center;
+
+            button {
+              background-color: var(--background-button-light);
+              padding: 0.2rem 0.5rem;
+              border-radius: 1rem;
+              font-size: 1.1rem;
+              font-weight: 600;
+            }
+          }
+
+      }
+    }
+    .left-section,
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: 0.2s;
+      width: 100%;
+      height: 400px;
+      @include mobile {
+        height: auto;
+      }
+      @include tablet {
+        height: auto;
+      }
+    }
+  }
+}
+
+//Dark Mode
+body.dark {
+  .project-details {
+    background-color: transparent;
+
+    .grid-container {
+      .left-section {
+        .hero-section {
+          .hero-text {
+            background-color: rgba(0, 0, 0, 0.56);
+          }
+        }
+        .explore-section {
+          .project-description {
+            .description-btn {
+              .button {
+                background-color: #423775;
+              }
+            }
+          }
+        }
+      }
+      .right-section {
+        .stats {
+          .stats-card {
+            background-color: rgba(72, 59, 119, 0.79);
+            border: 1px solid rgba(84, 83, 87, 0.86);
+
+            .title-icon {
+              .icon {
+                background-color: #2C254A;
+              }
+            }
+          }
+        }
+        .project-supervisors {
+          .supervisors-grid {
+            .supervisor-card {
+              .supervisor-img {
+                border: 1px solid rgba(84, 83, 87, 0.86);
+              }
+            }
+          }
+          .supervisors-btn {
+            button {
+              background-color: #423775;
+            }
+          }
+        }
+      }
+      .card {
+        background-color: #2C254A;
+      }
+    }
+  }
+}

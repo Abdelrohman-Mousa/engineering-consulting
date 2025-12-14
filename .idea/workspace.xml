@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/about/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/projects/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/projects/project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +68,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,15 +81,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\public\assets\images" />
+      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
       <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\src" />
+      <recent name="E:\projects\engineering-consulting\app\routes" />
+      <recent name="E:\projects\engineering-consulting\app" />
+      <recent name="E:\projects\engineering-consulting\app\routes\projects" />
       <recent name="E:\projects\engineering-consulting\public\assets\images" />
-      <recent name="E:\projects\engineering-consulting\public" />
-      <recent name="E:\projects\engineering-consulting\public\assets\icons" />
-      <recent name="E:\projects\engineering-consulting\app\components" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -117,7 +127,16 @@
       <workItem from="1763796293643" duration="11681000" />
       <workItem from="1764010265361" duration="4184000" />
       <workItem from="1764073647121" duration="13231000" />
-      <workItem from="1764260395414" duration="1096000" />
+      <workItem from="1764260395414" duration="2145000" />
+      <workItem from="1764430203492" duration="5056000" />
+      <workItem from="1764526583542" duration="5127000" />
+      <workItem from="1764588438663" duration="12314000" />
+      <workItem from="1764883685355" duration="4461000" />
+      <workItem from="1765017505431" duration="528000" />
+      <workItem from="1765023084230" duration="14493000" />
+      <workItem from="1765203366410" duration="21490000" />
+      <workItem from="1765462057447" duration="21811000" />
+      <workItem from="1765638770076" duration="6937000" />
     </task>
     <servers />
   </component>

@@ -149,6 +149,9 @@
         height: 400px;
         border-radius: 2rem;
         object-fit: cover;
+        @include mobile {
+          height: 300px;
+        }
 
       }
       .xxx {

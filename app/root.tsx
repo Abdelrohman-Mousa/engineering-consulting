@@ -51,10 +51,22 @@ export default function App() {
   const location = useLocation();
 
   // ⛔ الصفحات اللي مش عايز فيها Navbar و Footer
-  const hideLayoutRoutes = ["/contact", "/signin"];
-
+  const hideLayoutRoutes = ["/contact", "/signin","/projectsDetails/"];
+/*
   // 🔍 فحص هل الصفحة الحالية من الصفحات دي؟
-  const hideLayout = hideLayoutRoutes.includes(location.pathname);
+   const hideLayout = hideLayoutRoutes.includes(location.pathname);
+
+   return (
+       <div className="app">
+         {!hideLayout && <Navbar />}
+         <Outlet />
+         {!hideLayout && <Footer />}
+       </div>
+   );
+ */
+  const hideLayout = hideLayoutRoutes.some(route =>
+      location.pathname.startsWith(route)
+  );
 
   return (
       <div className="app">
