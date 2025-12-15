@@ -11,6 +11,7 @@ import Style from '@mui/icons-material/Style';
 import Construction from '@mui/icons-material/Construction';
 import ThreeDRotation from '@mui/icons-material/ThreeDRotation';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import {useTranslation} from "react-i18next";
 
 const StyledMenu = styled((props: MenuProps) => (
     <Menu
@@ -59,6 +60,8 @@ const StyledMenu = styled((props: MenuProps) => (
 }));
 
 export default function ButtonFilter({ onSelect }: { onSelect: (value: string) => void }) {
+    const { t } = useTranslation();
+
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
 
@@ -83,7 +86,7 @@ export default function ButtonFilter({ onSelect }: { onSelect: (value: string) =
                 onClick={handleClick}
                 endIcon={<KeyboardArrowDownIcon />}
             >
-                categories
+                {t("categoriesLabel")}
             </Button>
 
             <StyledMenu
@@ -94,32 +97,32 @@ export default function ButtonFilter({ onSelect }: { onSelect: (value: string) =
             >
                 <MenuItem onClick={() => handleClose("All")} disableRipple>
                     <DashboardCustomizeIcon />
-                    All Projects
+                    {t("categories.allProjects")}
                 </MenuItem>
 
                 <MenuItem onClick={() => handleClose("Residential")} disableRipple>
                     <Home />
-                    Residential
+                    {t("categories.residential")}
                 </MenuItem>
 
                 <MenuItem onClick={() => handleClose("Commercial")} disableRipple>
                     <Business />
-                    Commercial
+                    {t("categories.commercial")}
                 </MenuItem>
 
                 <MenuItem onClick={() => handleClose("Interior Design")} disableRipple>
                     <Style />
-                    Interior Design
+                    {t("categories.interior")}
                 </MenuItem>
 
                 <MenuItem onClick={() => handleClose("Renovation")} disableRipple>
                     <Construction />
-                    Renovation
+                    {t("categories.renovation")}
                 </MenuItem>
 
                 <MenuItem onClick={() => handleClose("3D Visualization")} disableRipple>
                     <ThreeDRotation />
-                    3D Visualization
+                    {t("categories.visualization")}
                 </MenuItem>
             </StyledMenu>
         </div>

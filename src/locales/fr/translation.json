@@ -118,7 +118,325 @@
   "from-Message-1" : "Dites-nous comment nous pouvons vous aider",
   "Send-Message" : "Envoyer le message",
   "map-text" : "Vous préférez une approche directe ?",
-  "map-time" : "Du lundi au vendredi, de 9h à 18h (GMT)"
+  "map-time" : "Du lundi au vendredi, de 9h à 18h (GMT)",
+  "viewDetails": "Voir les détails",
+  "supervisorsTitle": "Superviseurs du projet",
+  "nameLabel": "Nom du projet",
+  "categoryLabel": "Catégorie du projet",
+  "clientLabel": "Client",
+  "locationLabel": "Emplacement",
+  "descriptionLabel": "Description du projet",
+  "roleLabel": "Rôle",
+  "completedProjects": "Projets terminés",
+  "filterHint": "Utilisez le filtre pour afficher votre type de projet préféré.",
+  "categoriesLabel": "Catégories",
+
+  "categories": {
+    "allProjects": "Tous les projets",
+    "residential": "Résidentiel",
+    "commercial": "Commercial",
+    "renovation": "Rénovation",
+    "interior": "Design d'intérieur",
+    "visualization": "Visualisation 3D"
+  },
+
+  "projects": {
+    "modernVilla": {
+      "name": "Villa Moderne",
+      "description": "Projet de villa résidentielle moderne avec des finitions de luxe.",
+      "client": "Projet Privé",
+      "location": "Le Caire, Égypte",
+      "bigDescription": "Ce projet vise à fournir une solution d’ingénierie complète comprenant l’évaluation du site, la planification architecturale et la conception structurelle. Le travail comprend la préparation de plans précis, le respect des normes d’ingénierie et la fourniture d’un accompagnement technique tout au long du développement du projet. L’objectif était de créer un design équilibré alliant fonctionnalité, sécurité et harmonie visuelle, tout en répondant aux exigences spécifiques du client. Grâce à une analyse minutieuse et à des pratiques d’ingénierie modernes, le projet garantit efficacité, durabilité et stabilité à long terme.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Ahmed Samir",
+          "role": "Chef de projet"
+        },
+        "2": {
+          "name": "Ing. Omar Khaled",
+          "role": "Ingénieur structure senior"
+        },
+        "3": {
+          "name": "Ing. Sara Adel",
+          "role": "Ingénieure contrôle qualité"
+        }
+      }
+    },
+
+    "interiorDesign": {
+      "name": "Design d'intérieur",
+      "description": "Projet de design intérieur pour un bureau moderne.",
+      "client": "Elite Business Co.",
+      "location": "New Cairo, Égypte",
+      "bigDescription": "Ce projet commercial de design intérieur se concentre sur la création d'un espace de bureau fonctionnel et esthétiquement attrayant. L'équipe a travaillé sur la planification de l'espace, la disposition du mobilier, la conception de l'éclairage et le choix des matériaux pour obtenir un environnement de travail moderne et productif. Le projet garantit que l'espace s'aligne avec l'image de marque et les besoins opérationnels du client tout en maintenant le confort et des finitions de haute qualité.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Ahmed Fathy",
+          "role": "Designer intérieur principal"
+        },
+        "2": {
+          "name": "Ing. Kareem Tarek",
+          "role": "Spécialiste éclairage & matériaux"
+        },
+        "3": {
+          "name": "Ing. Sarah Mostafa",
+          "role": "Superviseur d'exécution et finition"
+        }
+      }
+    },
+
+    "steelStructure": {
+      "name": "Structure en acier",
+      "description": "Projet de structure en acier pour un bâtiment industriel.",
+      "client": "Industrial Engineering Co.",
+      "location": "6th of October City, Égypte",
+      "bigDescription": "Le projet consiste à concevoir et à mettre en œuvre un système complet de structure en acier pour une installation industrielle. Il comprend l'analyse des charges, la modélisation structurelle, les plans de fabrication et la supervision du montage sur site. L'objectif est de fournir une structure en acier durable, sûre et très stable, capable de supporter des opérations industrielles lourdes.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Dina Osama",
+          "role": "Chef de conception structurelle"
+        },
+        "2": {
+          "name": "Ing. Hossam Abdelrazek",
+          "role": "Ingénieur en détails de l’acier"
+        },
+        "3": {
+          "name": "Ing. Mahmoud Reda",
+          "role": "Superviseur de montage sur site"
+        }
+      }
+    },
+
+    "landscapeProject": {
+      "name": "Projet Paysager",
+      "description": "Rénovation et aménagement paysager pour un jardin résidentiel.",
+      "client": "Green Life Homes",
+      "location": "Alexandrie, Égypte",
+      "bigDescription": "Ce projet de rénovation paysagère transforme un espace extérieur résidentiel en un jardin fonctionnel et esthétiquement attrayant. Les travaux incluent le choix de la végétation, les éléments durs, la planification de l'éclairage et des solutions d'irrigation modernes. L'objectif est de créer un environnement équilibré combinant esthétique, confort et durabilité tout en répondant aux besoins du style de vie du client.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Abdelrohman Marei",
+          "role": "Architecte paysagiste"
+        },
+        "2": {
+          "name": "Ing. Nesma Adel",
+          "role": "Spécialiste plantation & irrigation"
+        },
+        "3": {
+          "name": "Ing. Youssef Saeed",
+          "role": "Ingénieur mise en œuvre sur site"
+        }
+      }
+    },
+
+    "foodFactory": {
+      "name": "Usine Alimentaire",
+      "description": "Visualisation 3D pour une usine alimentaire industrielle.",
+      "client": "Global Food Industries",
+      "location": "Ismaïlia, Égypte",
+      "bigDescription": "Ce projet comprend la production de visualisations 3D de haute qualité pour une installation de production alimentaire industrielle. Il présente des plans précis, le placement des machines, l'optimisation du flux de travail et les chemins de circulation des matériaux. L'objectif est d'aider le client à visualiser la conception complète de l'usine avant l'exécution, garantissant ainsi l'efficacité fonctionnelle et la conformité aux normes de l'industrie alimentaire.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Tamer Hassan",
+          "role": "Responsable Visualisation 3D"
+        },
+        "2": {
+          "name": "Ing. Nourhan Emad",
+          "role": "Ingénieur Planification Industrielle"
+        },
+        "3": {
+          "name": "Ing. Alaa Mohamed",
+          "role": "Superviseur Qualité & Conformité"
+        }
+      }
+    },
+
+    "luxuryApartmentInterior": {
+      "name": "Intérieur Appartement de Luxe",
+      "description": "Design intérieur haut de gamme pour un appartement premium.",
+      "client": "Skyline Properties",
+      "location": "Dubaï, Émirats Arabes Unis",
+      "bigDescription": "Ce projet propose un concept de design intérieur luxueux pour un appartement haut de gamme. L'équipe s'est concentrée sur des matériaux premium, du mobilier personnalisé et des solutions d'éclairage modernes pour créer un espace de vie sophistiqué adapté au style de vie du client. Le design assure confort, élégance et fonctionnalité.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Lina Fares",
+          "role": "Architecte d'intérieur"
+        },
+        "2": {
+          "name": "Ing. Karim Mansour",
+          "role": "Spécialiste matériaux & éclairage"
+        },
+        "3": {
+          "name": "Ing. Reem Hossam",
+          "role": "Superviseur de l'exécution"
+        }
+      }
+    },
+
+    "industrialSteelHangar": {
+      "name": "Hangar Industriel en Acier",
+      "description": "Construction d'un hangar en acier pour stockage industriel.",
+      "client": "Mega Logistics Group",
+      "location": "Djeddah, Arabie Saoudite",
+      "bigDescription": "Le projet inclut la conception et la construction d'un hangar en acier utilisé pour le stockage industriel. Il comporte des éléments structurels robustes, un détaillage précis de l'acier et un design efficace pour supporter les charges. Le hangar assure stabilité, sécurité et performance à long terme pour les opérations industrielles.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Wael Mostafa",
+          "role": "Ingénieur Structure Principal"
+        },
+        "2": {
+          "name": "Ing. Hana El-Sherif",
+          "role": "Spécialiste Détail Acier"
+        },
+        "3": {
+          "name": "Ing. Ayman Yasser",
+          "role": "Superviseur sur Site"
+        }
+      }
+    },
+
+    "luxuryLandscapeRenovation": {
+      "name": "Rénovation de Paysage de Luxe",
+      "description": "Rénovation complète d'une zone paysagère haut de gamme.",
+      "client": "Palm Green Resorts",
+      "location": "Charm el-Cheikh, Égypte",
+      "bigDescription": "Cette rénovation paysagère vise à créer un environnement extérieur luxueux avec des éléments Hardscape modernes, des fontaines et des systèmes d'irrigation écologiques. L'équipe a travaillé à améliorer l'expérience extérieure tout en garantissant la durabilité à long terme et l'harmonie visuelle.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Amira Khaled",
+          "role": "Architecte Paysagiste"
+        },
+        "2": {
+          "name": "Ing. Yassin Mahmoud",
+          "role": "Concepteur Irrigation & Aménagement Paysager"
+        },
+        "3": {
+          "name": "Ing. Lobna Hassan",
+          "role": "Superviseur de l'implémentation"
+        }
+      }
+    },
+
+    "frozenFoodFactoryVisualization": {
+      "name": "Visualisation d'une Usine d'Aliments Surgelés",
+      "description": "Visualisation 3D complète pour une installation de production d'aliments surgelés.",
+      "client": "ColdTech Industries",
+      "location": "Riyad, Arabie Saoudite",
+      "bigDescription": "Ce projet comprend la production de visualisations 3D avancées pour une installation de production d'aliments surgelés. Il met en évidence la disposition des équipements, l'optimisation des flux de travail et la simulation du mouvement des matériaux. La conception garantit l'efficacité et le respect des normes d'hygiène industrielle.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Sami Khalil",
+          "role": "Spécialiste en Visualisation"
+        },
+        "2": {
+          "name": "Ing. Nourhan Adel",
+          "role": "Ingénieur en Aménagement Industriel"
+        },
+        "3": {
+          "name": "Ing. Fady Youssef",
+          "role": "Inspecteur Qualité et Normes"
+        }
+      }
+    },
+
+    "contemporaryResidentialVilla": {
+      "name": "Villa Résidentielle Contemporaine",
+      "description": "Une villa moderne avec un design architectural et structurel intégré.",
+      "client": "Famille Al-Fakhry",
+      "location": "Côte Nord, Égypte",
+      "bigDescription": "Ce projet de villa résidentielle présente une architecture contemporaine avec une analyse structurelle détaillée et des matériaux de finition modernes. La conception combine esthétique et planification fonctionnelle, assurant une expérience de vie confortable conforme à la vision du client et à l'environnement naturel du site.",
+      "supervisors": {
+        "1": { "name": "Ing. Ahmed Lotfy", "role": "Architecte Principal du Projet" },
+        "2": { "name": "Ing. Basma El-Shazly", "role": "Ingénieur en Analyse Structurelle" },
+        "3": { "name": "Ing. Mohamed Raafat", "role": "Superviseur Assurance Qualité" }
+      }
+    },
+
+    "urbanOfficeComplex": {
+      "name": "Complexe de Bureaux Urbain",
+      "description": "Complexe de bureaux moderne avec design intelligent et efficacité énergétique.",
+      "client": "UrbanCorp",
+      "location": "Abou Dhabi, ÉAU",
+      "bigDescription": "Ce projet de complexe de bureaux se concentre sur une architecture moderne intégrée à des solutions de conception durables. L'équipe a planifié l'utilisation de l'espace, les systèmes économes en énergie et la stabilité structurelle pour assurer un environnement de travail fonctionnel et innovant.",
+      "supervisors": {
+        "1": { "name": "Ing. Hala Youssef", "role": "Architecte Principal" },
+        "2": { "name": "Ing. Omar Fathy", "role": "Ingénieur Structurel" },
+        "3": { "name": "Ing. Nada Khaled", "role": "Coordinateur du Projet" }
+      }
+    },
+
+    "industrialWarehouseExpansion": {
+      "name": "Extension d'entrepôt industriel",
+      "description": "Extension de structure en acier pour un entrepôt existant.",
+      "client": "Global Logistics",
+      "location": "Le Caire, Égypte",
+      "bigDescription": "Ce projet consiste à étendre un entrepôt industriel en utilisant des solutions de structure en acier. L'accent est mis sur la conception porteuse, l'utilisation efficace des matériaux et l'intégration harmonieuse avec les structures existantes tout en garantissant la sécurité et la durabilité à long terme.",
+      "supervisors": {
+        "1": { "name": "Ing. Tamer Hossam", "role": "Responsable conception structurelle" },
+        "2": { "name": "Ing. Salma Fathy", "role": "Ingénieur de détail" },
+        "3": { "name": "Ing. Mohamed Nader", "role": "Superviseur sur site" }
+      }
+    },
+
+    "ecoResortLandscape": {
+      "name": "Paysage du Resort Écologique",
+      "description": "Conception de paysage durable pour un éco-resort.",
+      "client": "Green Horizons Resorts",
+      "location": "Sharm El Sheikh, Égypte",
+      "bigDescription": "Ce projet de paysage pour un éco-resort intègre des matériaux durables, la sélection de plantes locales et des systèmes d'irrigation économes en eau. L'objectif est de créer un environnement beau et écologique qui améliore l'expérience des clients tout en minimisant l'impact environnemental.",
+      "supervisors": {
+        "1": { "name": "Ing. Rania Samir", "role": "Architecte paysagiste" },
+        "2": { "name": "Ing. Yassin Adel", "role": "Spécialiste en irrigation" },
+        "3": { "name": "Ing. Dina Khaled", "role": "Superviseur de mise en œuvre sur site" }
+      }
+    },
+
+    "seasideResidentialVilla": {
+      "name": "Villa Résidentielle en Bord de Mer",
+      "description": "Conception d'une villa moderne avec vue sur la mer et finitions luxueuses.",
+      "client": "El-Sahel Group",
+      "location": "Côte Nord, Égypte",
+      "bigDescription": "Ce projet de villa résidentielle en bord de mer présente une architecture moderne avec des finitions intérieures et extérieures haut de gamme. La conception optimise l'éclairage naturel, les vues sur la mer et l'agencement fonctionnel tout en garantissant la stabilité structurelle et une durabilité à long terme.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Ahmed El-Masry",
+          "role": "Architecte Principal"
+        },
+        "2": {
+          "name": "Ing. Salma Tarek",
+          "role": "Ingénieure en Structure"
+        },
+        "3": {
+          "name": "Ing. Omar Fathi",
+          "role": "Chef de Projet"
+        }
+      }
+    },
+
+    "familyResidentialComplex": {
+      "name": "Complexe Résidentiel Familial",
+      "description": "Complexe résidentiel moderne conçu pour les familles avec des installations intégrées.",
+      "client": "Al-Madina Development",
+      "location": "New Cairo, Égypte",
+      "bigDescription": "Ce complexe résidentiel a été conçu pour offrir un environnement de vie confortable et efficace aux familles. Le projet comprend des immeubles résidentiels à plusieurs unités, des espaces verts ouverts et des équipements communautaires essentiels. La conception met l'accent sur l'optimisation de la lumière naturelle, la préservation de l'intimité entre les unités et la création de parcours adaptés aux piétons. Les travaux structurels ont été planifiés conformément aux normes de sécurité modernes tout en optimisant l'utilisation des matériaux. Le résultat final offre une expérience de vie de haute qualité avec une durabilité à long terme et une élégance architecturale.",
+      "supervisors": {
+        "1": {
+          "name": "Ing. Farah Youssef",
+          "role": "Architecte Principale"
+        },
+        "2": {
+          "name": "Ing. Mostafa Adel",
+          "role": "Ingénieur en Structure"
+        },
+        "3": {
+          "name": "Ing. Hadi Samir",
+          "role": "Responsable de la Construction sur Site"
+        }
+      }
+    }
+
+
+  }
 
 
 

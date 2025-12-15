@@ -108,7 +108,7 @@
           }
         }
         .project-card-button {
-            min-width: 110px;
+          min-width: fit-content;
           button {
             background-color: var(--background-button-light);
             color: #000111;

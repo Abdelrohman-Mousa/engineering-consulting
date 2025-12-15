@@ -15,18 +15,18 @@ const Projects = () => {
 
     const filteredProjects = activeCategory === "All"
         ? projectsData
-        : projectsData.filter((proj) => proj.category === activeCategory);
+        : projectsData.filter((proj) => proj.filterCategory === activeCategory);
 
 
     return (
         <div className="projects">
             <div className="projects-head">
                 <div className="projects-text">
-                    Completed Projects <span>+85</span>
+                    {t("completedProjects")} <span>+85</span>
                 </div>
 
                 <div className="projects-filter">
-                    <span>"Use the filter to view your preferred project type."</span>
+                    <span>{t("filterHint")}</span>
                     <ButtonFilter onSelect={setActiveCategory} />
                 </div>
             </div>
@@ -40,11 +40,11 @@ const Projects = () => {
                         <div className="projects-card-text">
                             <div className="projects-card-text-content">
                                 <h3>{t(proj.name)}</h3>
-                                <span>{proj.category}</span>
+                                <span>{t(proj.category)}</span>
                             </div>
                             <div className="project-card-button">
                                 <Link to={`/projectsDetails/${proj.id}`}>
-                                    <ShinyButton>View Details</ShinyButton>
+                                    <ShinyButton>{t("viewDetails")}</ShinyButton>
                                 </Link>
                             </div>
 

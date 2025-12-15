@@ -3,8 +3,11 @@ import projectsData from "../../../src/data/projectsData";
 import './projectDetails.scss';
 import {ShinyButton} from "~/components/ui/shiny-button";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const ProjectDetailsId = () => {
+    const { t } = useTranslation();
+
     const { id } = useParams();
     const project = projectsData.find((p) => p.id === Number(id));
 
@@ -21,20 +24,20 @@ const ProjectDetailsId = () => {
                            <img src={project.image} alt={project.name} />
                        </div>
                        <div className="hero-text">
-                           <p>{project.description}</p>
+                           <p>{t(project.description)}</p>
                        </div>
                    </div>
                     {/*Explore*/}
                     <div className="explore-section">
                         <div className="project-description card">
                             <div className="description-title">
-                                <h1>Project Description</h1>
+                                <h1>{t("descriptionLabel")}</h1>
                             </div>
                             <div className="description-content">
-                                <p>{project.big_Description}</p>
+                                <p>{t(project.big_Description)}</p>
                             </div>
                             <div className="description-btn">
-                                <ShinyButton className="button">Request Consultation</ShinyButton>
+                                <ShinyButton className="button">{t("button-hero-section")}</ShinyButton>
                             </div>
                         </div>
                     </div>
@@ -47,40 +50,40 @@ const ProjectDetailsId = () => {
                             {/*1*/}
                             <div className="stats-card">
                                 <div className="title-icon">
-                                    <p>Project Name</p>
+                                    <p>{t("nameLabel")}</p>
                                     <div className="icon">
                                       <img src="/assets/icons/pen.svg" alt="project-name" />
                                     </div>
                                 </div>
-                                <h1 className="basic-title">{project.name}</h1>
+                                <h1 className="basic-title">{t(project.name)}</h1>
                             </div>
                             {/*2*/}
                             <div className="stats-card">
                                 <div className="title-icon">
-                                    <p>Project Category</p>
+                                    <p>{t("categoryLabel")}</p>
                                     <div className="icon">
                                         <img src="/assets/icons/category1.svg" alt="project-name" />
                                     </div>
                                 </div>
-                                <h1 className="basic-title">{project.category}</h1>
+                                <h1 className="basic-title">{t(project.category)}</h1>
                             </div>
                             <div className="stats-card">
                                 <div className="title-icon">
-                                    <p>Client</p>
+                                    <p>{t("clientLabel")}</p>
                                     <div className="icon">
                                         <img src="/assets/icons/client.svg" alt="project-name" />
                                     </div>
                                 </div>
-                                <h1 className="basic-title">{project.client}</h1>
+                                <h1 className="basic-title">{t(project.client)}</h1>
                             </div>
                             <div className="stats-card">
                                 <div className="title-icon">
-                                    <p>Location</p>
+                                    <p>{t("locationLabel")}</p>
                                     <div className="icon">
                                         <img src="/assets/icons/location-1.svg" alt="project-name" />
                                     </div>
                                 </div>
-                                <h1 className="basic-title">{project.location}</h1>
+                                <h1 className="basic-title">{t(project.location)}</h1>
                             </div>
                         </div>
                     </div>
@@ -89,43 +92,30 @@ const ProjectDetailsId = () => {
                     {/*project-supervisors*/}
                     <div className="project-supervisors card">
                        <div className="supervisors-title">
-                           <h1>Project Supervisors</h1>
+                           <h1>{t("supervisorsTitle")}</h1>
                        </div>
                         <div className="supervisors-grid">
-                            <div className="supervisor-card">
-                                <div className="supervisor-img">
-                                    <img src={project.projectSupervisor_img_1} alt="supervisor" />
-                                    <div className="supervisor-info">
-                                        <p>{project.projectSupervisor_name_1}</p>
-                                        <span><strong>Role:</strong> {project.projectSupervisor_role_1}</span>
-                                    </div>
-                                </div>
-                            </div>
+                            {project.supervisors.map((sup, index) => (
+                                <div className="supervisor-card" key={index}>
+                                    <div className="supervisor-img">
+                                        <img src={sup.image} alt="supervisor" />
 
-                            <div className="supervisor-card">
-                                <div className="supervisor-img">
-                                    <img src={project.projectSupervisor_img_2} alt="supervisor" />
-                                    <div className="supervisor-info">
-                                        <p>{project.projectSupervisor_name_2}</p>
-                                        <span><strong>Role:</strong> {project.projectSupervisor_role_2}</span>
+                                        <div className="supervisor-info">
+                                            <p>{t(sup.name)}</p>
+
+                                            <span><strong>{t("roleLabel")}:</strong> {t(sup.role)}</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="supervisor-card">
-                                <div className="supervisor-img">
-                                    <img src={project.projectSupervisor_img_3} alt="supervisor" />
-                                    <div className="supervisor-info">
-                                        <p>{project.projectSupervisor_name_3}</p>
-                                        <span><strong>Role:</strong> {project.projectSupervisor_role_3}</span>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
+
                         <div className="supervisors-btn">
                             <Link to="/contact">
-                              <ShinyButton>Contact Us</ShinyButton>
+                                <ShinyButton>{t("ContactUs")}</ShinyButton>
                             </Link>
                         </div>
+
                     </div>
                 </div>
             </div>

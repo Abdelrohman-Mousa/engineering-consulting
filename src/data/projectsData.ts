@@ -24,369 +24,499 @@ const projectsData = [
 
     {
         id: 1,
-        name: "Modern Villa",
-        category: "Residential",
+        key: "modernVilla",
+        category: "categories.residential",
         image: project1,
-        description: "A modern residential villa project with luxury finishing.",
-        client: "private Project",
-        location: "Cairo, Egypt",
-        projectSupervisor_img_1: supervisor_img_2,
-        projectSupervisor_img_2: supervisor_img_1,
-        projectSupervisor_img_3: supervisor_img_3,
-        projectSupervisor_name_1: "Eng. Ahmed Samir",
-        projectSupervisor_name_2: "Eng. Omar Khaled",
-        projectSupervisor_name_3: "Eng. Sara Adel",
-        projectSupervisor_role_1: "Project Manager ",
-        projectSupervisor_role_2: "Senior Structural Engineer",
-        projectSupervisor_role_3: "Quality Control Engineer",
-        big_Description: "This project focuses on delivering a complete engineering solution that includes site evaluation, architectural planning, and structural design. The work covers preparing accurate drawings, ensuring compliance with engineering standards, and providing technical guidance throughout the project's development. Our goal was to create a balanced design that combines functionality, safety, and visual harmony while addressing the client’s specific requirements. Through careful analysis and modern engineering practices, we ensured that the project is both efficient and durable, offering high performance and long-term stability."
+        filterCategory: "Residential",
+
+        name: "projects.modernVilla.name",
+        description: "projects.modernVilla.description",
+        client: "projects.modernVilla.client",
+        location: "projects.modernVilla.location",
+        big_Description: "projects.modernVilla.bigDescription",
+
+        supervisors: [
+            {
+                image: supervisor_img_2,
+                name: "projects.modernVilla.supervisors.1.name",
+                role: "projects.modernVilla.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.modernVilla.supervisors.2.name",
+                role: "projects.modernVilla.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.modernVilla.supervisors.3.name",
+                role: "projects.modernVilla.supervisors.3.role"
+            }
+        ]
     },
+
     {
         id: 2,
-        name: "Interior Design",
-        category: "Commercial",
+        key: "interiorDesign",
+        category: "categories.commercial",
         image: project2,
-        description: "Interior design project for a modern office.",
-        client: "Elite Business Co.",
-        location: "New Cairo, Egypt",
+        filterCategory: "Commercial",
 
-        projectSupervisor_img_1: supervisor_img_1,
-        projectSupervisor_img_2: supervisor_img_2,
-        projectSupervisor_img_3: supervisor_img_3,
 
-        projectSupervisor_name_1: "Eng. Ahmed Fathy",
-        projectSupervisor_name_2: "Eng. Kareem Tarek",
-        projectSupervisor_name_3: "Eng. Sarah Mostafa",
+        name: "projects.interiorDesign.name",
+        description: "projects.interiorDesign.description",
+        client: "projects.interiorDesign.client",
+        location: "projects.interiorDesign.location",
+        big_Description: "projects.interiorDesign.bigDescription",
 
-        projectSupervisor_role_1: "Lead Interior Designer",
-        projectSupervisor_role_2: "Lighting & Materials Specialist",
-        projectSupervisor_role_3: "Execution & Finishing Supervisor",
-
-        big_Description:
-            "This commercial interior design project focuses on creating a functional and visually appealing office space. The team worked on space planning, furniture layout, lighting design, and material selection to achieve a modern and productive work environment. The project ensures that the space aligns with the client's branding and operational needs while maintaining comfort and high-quality finishing.",
+        supervisors: [
+            {
+                image: supervisor_img_1,
+                name: "projects.interiorDesign.supervisors.1.name",
+                role: "projects.interiorDesign.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.interiorDesign.supervisors.2.name",
+                role: "projects.interiorDesign.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.interiorDesign.supervisors.3.name",
+                role: "projects.interiorDesign.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 3,
-        name: "Steel Structure",
-        category: "Interior Design",
+        key: "steelStructure",
+        category: "categories.interior",
         image: project3,
-        description: "Steel framework project for industrial building.",
-        client: "Industrial Engineering Co.",
-        location: "6th of October City, Egypt",
+        filterCategory: "Interior Design",
 
-        projectSupervisor_img_1: supervisor_img_3,
-        projectSupervisor_img_2: supervisor_img_2,
-        projectSupervisor_img_3: supervisor_img_1,
 
-        projectSupervisor_name_1: "Eng. Dina Osama",
-        projectSupervisor_name_2: "Eng. Hossam Abdelrazek",
-        projectSupervisor_name_3: "Eng. Mahmoud Reda",
+        name: "projects.steelStructure.name",
+        description: "projects.steelStructure.description",
+        client: "projects.steelStructure.client",
+        location: "projects.steelStructure.location",
+        big_Description: "projects.steelStructure.bigDescription",
 
-        projectSupervisor_role_1: "Structural Design Lead",
-        projectSupervisor_role_2: "Steel Detailing Engineer",
-        projectSupervisor_role_3: "Site Erection Supervisor",
-
-        big_Description:
-            "The project involves designing and implementing a complete steel structure system for an industrial facility. It includes load analysis, structural modeling, fabrication drawings, and supervising the on-site erection process. The goal is to deliver a durable, safe, and highly stable steel framework capable of supporting heavy industrial operations.",
+        supervisors: [
+            {
+                image: supervisor_img_3,
+                name: "projects.steelStructure.supervisors.1.name",
+                role: "projects.steelStructure.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.steelStructure.supervisors.2.name",
+                role: "projects.steelStructure.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.steelStructure.supervisors.3.name",
+                role: "projects.steelStructure.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 4,
-        name: "Landscape Project",
-        category: "Renovation",
+        key: "landscapeProject",
+        category: "categories.renovation",
         image: project4,
-        description: "Renovation and landscaping for a residential garden.",
-        client: "Green Life Homes",
-        location: "Alexandria, Egypt",
+        filterCategory: "Renovation",
 
-        projectSupervisor_img_1: supervisor_img_2,
-        projectSupervisor_img_2: supervisor_img_3,
-        projectSupervisor_img_3: supervisor_img_1,
 
-        projectSupervisor_name_1: "Eng. Abdelrohman Marei",
-        projectSupervisor_name_2: "Eng. Nesma Adel",
-        projectSupervisor_name_3: "Eng. Youssef Saeed",
+        name: "projects.landscapeProject.name",
+        description: "projects.landscapeProject.description",
+        client: "projects.landscapeProject.client",
+        location: "projects.landscapeProject.location",
+        big_Description: "projects.landscapeProject.bigDescription",
 
-        projectSupervisor_role_1: "Landscape Architect",
-        projectSupervisor_role_2: "Planting & Irrigation Specialist",
-        projectSupervisor_role_3: "Site Implementation Engineer",
-
-        big_Description:
-            "This landscape renovation project transforms a residential outdoor area into a functional and visually appealing garden space. The work includes softscape selection, hardscape elements, lighting planning, and modern irrigation solutions. The focus is to create a balanced environment that combines aesthetics, comfort, and sustainability while meeting the client's lifestyle needs.",
+        supervisors: [
+            {
+                image: supervisor_img_2,
+                name: "projects.landscapeProject.supervisors.1.name",
+                role: "projects.landscapeProject.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.landscapeProject.supervisors.2.name",
+                role: "projects.landscapeProject.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.landscapeProject.supervisors.3.name",
+                role: "projects.landscapeProject.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 5,
-        name: "Food Factory",
-        category: "3D Visualization",
+        key: "foodFactory",
+        category: "categories.visualization",
         image: project5,
-        description: "3D visualization for an industrial food factory.",
-        client: "Global Food Industries",
-        location: "Ismailia, Egypt",
+        filterCategory: "3D Visualization",
 
-        projectSupervisor_img_1: supervisor_img_1,
-        projectSupervisor_img_2: supervisor_img_3,
-        projectSupervisor_img_3: supervisor_img_2,
 
-        projectSupervisor_name_1: "Eng. Tamer Hassan",
-        projectSupervisor_name_2: "Eng. Nourhan Emad",
-        projectSupervisor_name_3: "Eng. Alaa Mohamed",
+        name: "projects.foodFactory.name",
+        description: "projects.foodFactory.description",
+        client: "projects.foodFactory.client",
+        location: "projects.foodFactory.location",
+        big_Description: "projects.foodFactory.bigDescription",
 
-        projectSupervisor_role_1: "3D Visualization Lead",
-        projectSupervisor_role_2: "Industrial Layout Engineer",
-        projectSupervisor_role_3: "Quality & Compliance Supervisor",
-
-        big_Description:
-            "This project includes producing high-quality 3D visualizations for an industrial food production facility. It showcases accurate layouts, machinery placement, workflow optimization, and material flow paths. The objective is to help the client visualize the complete factory design before execution, ensuring functional efficiency and compliance with food industry standards.",
+        supervisors: [
+            {
+                image: supervisor_img_1,
+                name: "projects.foodFactory.supervisors.1.name",
+                role: "projects.foodFactory.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.foodFactory.supervisors.2.name",
+                role: "projects.foodFactory.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.foodFactory.supervisors.3.name",
+                role: "projects.foodFactory.supervisors.3.role"
+            }
+        ]
     },
+
     {
         id: 6,
-        name: "Luxury Apartment Interior",
-        category: "Commercial", // نفس فئة المشروع 2
+        key: "luxuryApartmentInterior",
+        category: "categories.commercial",
         image: project6,
-        description: "High-end interior design for a premium apartment.",
-        client: "Skyline Properties",
-        location: "Dubai, UAE",
+        filterCategory: "Commercial",
 
-        projectSupervisor_img_1: supervisor_img_3,
-        projectSupervisor_img_2: supervisor_img_1,
-        projectSupervisor_img_3: supervisor_img_5,
 
-        projectSupervisor_name_1: "Eng. Lina Fares",
-        projectSupervisor_name_2: "Eng. Karim Mansour",
-        projectSupervisor_name_3: "Eng. Reem Hossam",
+        name: "projects.luxuryApartmentInterior.name",
+        description: "projects.luxuryApartmentInterior.description",
+        client: "projects.luxuryApartmentInterior.client",
+        location: "projects.luxuryApartmentInterior.location",
+        big_Description: "projects.luxuryApartmentInterior.bigDescription",
 
-        projectSupervisor_role_1: "Interior Architect",
-        projectSupervisor_role_2: "Material & Lighting Specialist",
-        projectSupervisor_role_3: "Execution Supervisor",
-
-        big_Description:
-            "This project delivers a luxurious interior design concept for a high-end apartment. The team focused on premium materials, customized furniture, and modern lighting solutions to create a sophisticated living space tailored to the client's lifestyle. The design ensures comfort, elegance, and functionality.",
+        supervisors: [
+            {
+                image: supervisor_img_3,
+                name: "projects.luxuryApartmentInterior.supervisors.1.name",
+                role: "projects.luxuryApartmentInterior.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.luxuryApartmentInterior.supervisors.2.name",
+                role: "projects.luxuryApartmentInterior.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_5,
+                name: "projects.luxuryApartmentInterior.supervisors.3.name",
+                role: "projects.luxuryApartmentInterior.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 7,
-        name: "Industrial Steel Hangar",
-        category: "Interior Design", // نفس فئة المشروع 3
+        key: "industrialSteelHangar",
+        category: "categories.interior",
         image: project7,
-        description: "Steel hangar construction for industrial storage.",
-        client: "Mega Logistics Group",
-        location: "Jeddah, Saudi Arabia",
+        filterCategory: "Interior Design",
 
-        projectSupervisor_img_1: supervisor_img_2,
-        projectSupervisor_img_2: supervisor_img_3,
-        projectSupervisor_img_3: supervisor_img_1,
 
-        projectSupervisor_name_1: "Eng. Wael Mostafa",
-        projectSupervisor_name_2: "Eng. Hana El-Sherif",
-        projectSupervisor_name_3: "Eng. Ayman Yasser",
+        name: "projects.industrialSteelHangar.name",
+        description: "projects.industrialSteelHangar.description",
+        client: "projects.industrialSteelHangar.client",
+        location: "projects.industrialSteelHangar.location",
+        big_Description: "projects.industrialSteelHangar.bigDescription",
 
-        projectSupervisor_role_1: "Lead Structural Engineer",
-        projectSupervisor_role_2: "Steel Detailing Specialist",
-        projectSupervisor_role_3: "On-site Supervisor",
-
-        big_Description:
-            "The project includes the design and construction of a steel hangar used for industrial storage. It features heavy-duty structural members, precision steel detailing, and an efficient load-bearing design. The hangar ensures stability, safety, and long-term performance under industrial operations.",
+        supervisors: [
+            {
+                image: supervisor_img_2,
+                name: "projects.industrialSteelHangar.supervisors.1.name",
+                role: "projects.industrialSteelHangar.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.industrialSteelHangar.supervisors.2.name",
+                role: "projects.industrialSteelHangar.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.industrialSteelHangar.supervisors.3.name",
+                role: "projects.industrialSteelHangar.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 8,
-        name: "Luxury Landscape Renovation",
-        category: "Renovation", // نفس فئة المشروع 4
+        key: "luxuryLandscapeRenovation",
+        category: "categories.renovation",
         image: project8,
-        description: "Full renovation of a high-end landscape area.",
-        client: "Palm Green Resorts",
-        location: "Sharm El Sheikh, Egypt",
+        filterCategory: "Renovation",
 
-        projectSupervisor_img_1: supervisor_img_5,
-        projectSupervisor_img_2: supervisor_img_4,
-        projectSupervisor_img_3: supervisor_img_6,
 
-        projectSupervisor_name_1: "Eng. Amira Khaled",
-        projectSupervisor_name_2: "Eng. Yassin Mahmoud",
-        projectSupervisor_name_3: "Eng. Lobna Hassan",
+        name: "projects.luxuryLandscapeRenovation.name",
+        description: "projects.luxuryLandscapeRenovation.description",
+        client: "projects.luxuryLandscapeRenovation.client",
+        location: "projects.luxuryLandscapeRenovation.location",
+        big_Description: "projects.luxuryLandscapeRenovation.bigDescription",
 
-        projectSupervisor_role_1: "Landscape Architect",
-        projectSupervisor_role_2: "Irrigation & Softscape Designer",
-        projectSupervisor_role_3: "Implementation Supervisor",
-
-        big_Description:
-            "This landscape renovation focuses on creating a luxurious outdoor environment with modern hardscape elements, water features, and eco-friendly irrigation systems. The team worked on enhancing the outdoor experience while ensuring long-term sustainability and visual harmony.",
+        supervisors: [
+            {
+                image: supervisor_img_5,
+                name: "projects.luxuryLandscapeRenovation.supervisors.1.name",
+                role: "projects.luxuryLandscapeRenovation.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_4,
+                name: "projects.luxuryLandscapeRenovation.supervisors.2.name",
+                role: "projects.luxuryLandscapeRenovation.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_6,
+                name: "projects.luxuryLandscapeRenovation.supervisors.3.name",
+                role: "projects.luxuryLandscapeRenovation.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 9,
-        name: "Frozen Food Factory Visualization",
-        category: "3D Visualization", // نفس فئة المشروع 5
+        key: "frozenFoodFactoryVisualization",
+        category: "categories.visualization",
         image: project9,
-        description: "Full 3D visualization for a frozen food facility.",
-        client: "ColdTech Industries",
-        location: "Riyadh, Saudi Arabia",
+        filterCategory: "3D Visualization",
 
-        projectSupervisor_img_1: supervisor_img_1,
-        projectSupervisor_img_2: supervisor_img_6,
-        projectSupervisor_img_3: supervisor_img_2,
 
-        projectSupervisor_name_1: "Eng. Sami Khalil",
-        projectSupervisor_name_2: "Eng. Nourhan Adel",
-        projectSupervisor_name_3: "Eng. Fady Youssef",
+        name: "projects.frozenFoodFactoryVisualization.name",
+        description: "projects.frozenFoodFactoryVisualization.description",
+        client: "projects.frozenFoodFactoryVisualization.client",
+        location: "projects.frozenFoodFactoryVisualization.location",
+        big_Description: "projects.frozenFoodFactoryVisualization.bigDescription",
 
-        projectSupervisor_role_1: "Visualization Specialist",
-        projectSupervisor_role_2: "Industry Layout Engineer",
-        projectSupervisor_role_3: "Quality & Standards Inspector",
-
-        big_Description:
-            "This project includes producing advanced 3D visualizations for a frozen food production facility. It highlights equipment layout, workflow optimization, and material movement simulation. The design ensures efficiency and compliance with industrial hygiene standards.",
+        supervisors: [
+            {
+                image: supervisor_img_1,
+                name: "projects.frozenFoodFactoryVisualization.supervisors.1.name",
+                role: "projects.frozenFoodFactoryVisualization.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_6,
+                name: "projects.frozenFoodFactoryVisualization.supervisors.2.name",
+                role: "projects.frozenFoodFactoryVisualization.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.frozenFoodFactoryVisualization.supervisors.3.name",
+                role: "projects.frozenFoodFactoryVisualization.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 10,
-        name: "Contemporary Residential Villa",
-        category: "Residential", // نفس فئة المشروع 1
+        key: "contemporaryResidentialVilla",
+        category: "categories.residential",
         image: project10,
-        description: "A modern villa with integrated architectural and structural design.",
-        client: "Al-Fakhry Family",
-        location: "North Coast, Egypt",
+        filterCategory: "Residential",
 
-        projectSupervisor_img_1: supervisor_img_1,
-        projectSupervisor_img_2: supervisor_img_5,
-        projectSupervisor_img_3: supervisor_img_4,
 
-        projectSupervisor_name_1: "Eng. Ahmed Lotfy",
-        projectSupervisor_name_2: "Eng. Basma El-Shazly",
-        projectSupervisor_name_3: "Eng. Mohamed Raafat",
+        name: "projects.contemporaryResidentialVilla.name",
+        description: "projects.contemporaryResidentialVilla.description",
+        client: "projects.contemporaryResidentialVilla.client",
+        location: "projects.contemporaryResidentialVilla.location",
+        big_Description: "projects.contemporaryResidentialVilla.bigDescription",
 
-        projectSupervisor_role_1: "Project Lead Architect",
-        projectSupervisor_role_2: "Structural Analysis Engineer",
-        projectSupervisor_role_3: "Quality Assurance Supervisor",
-
-        big_Description:
-            "This residential villa project features contemporary architecture with detailed structural analysis and modern finishing materials. The design combines aesthetics with functional planning, ensuring a comfortable living experience that matches the client's vision and the site's natural environment.",
+        supervisors: [
+            {
+                image: supervisor_img_1,
+                name: "projects.contemporaryResidentialVilla.supervisors.1.name",
+                role: "projects.contemporaryResidentialVilla.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_5,
+                name: "projects.contemporaryResidentialVilla.supervisors.2.name",
+                role: "projects.contemporaryResidentialVilla.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_4,
+                name: "projects.contemporaryResidentialVilla.supervisors.3.name",
+                role: "projects.contemporaryResidentialVilla.supervisors.3.role"
+            }
+        ]
     },
+
     {
         id: 11,
-        name: "Urban Office Complex",
-        category: "Commercial",
+        key: "urbanOfficeComplex",
+        category: "categories.commercial",
         image: project11,
-        description: "Modern office complex with smart design and energy efficiency.",
-        client: "UrbanCorp",
-        location: "Abu Dhabi, UAE",
+        filterCategory: "Commercial",
 
-        projectSupervisor_img_1: supervisor_img_6,
-        projectSupervisor_img_2: supervisor_img_2,
-        projectSupervisor_img_3: supervisor_img_3,
 
-        projectSupervisor_name_1: "Eng. Hala Youssef",
-        projectSupervisor_name_2: "Eng. Omar Fathy",
-        projectSupervisor_name_3: "Eng. Nada Khaled",
+        name: "projects.urbanOfficeComplex.name",
+        description: "projects.urbanOfficeComplex.description",
+        client: "projects.urbanOfficeComplex.client",
+        location: "projects.urbanOfficeComplex.location",
+        big_Description: "projects.urbanOfficeComplex.bigDescription",
 
-        projectSupervisor_role_1: "Lead Architect",
-        projectSupervisor_role_2: "Structural Engineer",
-        projectSupervisor_role_3: "Project Coordinator",
-
-        big_Description:
-            "This office complex project focuses on modern architecture integrated with sustainable design solutions. The team planned space utilization, energy-efficient systems, and structural stability to ensure a functional and innovative working environment."
+        supervisors: [
+            {
+                image: supervisor_img_6,
+                name: "projects.urbanOfficeComplex.supervisors.1.name",
+                role: "projects.urbanOfficeComplex.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.urbanOfficeComplex.supervisors.2.name",
+                role: "projects.urbanOfficeComplex.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.urbanOfficeComplex.supervisors.3.name",
+                role: "projects.urbanOfficeComplex.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 12,
-        name: "Industrial Warehouse Expansion",
-        category: "Interior Design",
+        key: "industrialWarehouseExpansion",
+        category: "categories.interior",
         image: project12,
-        description: "Steel structure expansion for an existing warehouse.",
-        client: "Global Logistics",
-        location: "Cairo, Egypt",
+        filterCategory: "Interior Design",
 
-        projectSupervisor_img_1: supervisor_img_2,
-        projectSupervisor_img_2: supervisor_img_3,
-        projectSupervisor_img_3: supervisor_img_1,
 
-        projectSupervisor_name_1: "Eng. Tamer Hossam",
-        projectSupervisor_name_2: "Eng. Salma Fathy",
-        projectSupervisor_name_3: "Eng. Mohamed Nader",
+        name: "projects.industrialWarehouseExpansion.name",
+        description: "projects.industrialWarehouseExpansion.description",
+        client: "projects.industrialWarehouseExpansion.client",
+        location: "projects.industrialWarehouseExpansion.location",
+        big_Description: "projects.industrialWarehouseExpansion.bigDescription",
 
-        projectSupervisor_role_1: "Structural Design Lead",
-        projectSupervisor_role_2: "Detailing Engineer",
-        projectSupervisor_role_3: "On-Site Supervisor",
-
-        big_Description:
-            "This project involves expanding an industrial warehouse using steel structure solutions. The focus was on load-bearing design, efficient use of materials, and seamless integration with existing structures while ensuring safety and long-term durability."
+        supervisors: [
+            {
+                image: supervisor_img_2,
+                name: "projects.industrialWarehouseExpansion.supervisors.1.name",
+                role: "projects.industrialWarehouseExpansion.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.industrialWarehouseExpansion.supervisors.2.name",
+                role: "projects.industrialWarehouseExpansion.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.industrialWarehouseExpansion.supervisors.3.name",
+                role: "projects.industrialWarehouseExpansion.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 13,
-        name: "Eco-Resort Landscape",
-        category: "Renovation",
+        key: "ecoResortLandscape",
+        category: "categories.renovation",
         image: project13,
-        description: "Sustainable landscape design for an eco-resort.",
-        client: "Green Horizons Resorts",
-        location: "Sharm El Sheikh, Egypt",
+        filterCategory: "Renovation",
 
-        projectSupervisor_img_1: supervisor_img_3,
-        projectSupervisor_img_2: supervisor_img_1,
-        projectSupervisor_img_3: supervisor_img_5,
 
-        projectSupervisor_name_1: "Eng. Rania Samir",
-        projectSupervisor_name_2: "Eng. Yassin Adel",
-        projectSupervisor_name_3: "Eng. Dina Khaled",
+        name: "projects.ecoResortLandscape.name",
+        description: "projects.ecoResortLandscape.description",
+        client: "projects.ecoResortLandscape.client",
+        location: "projects.ecoResortLandscape.location",
+        big_Description: "projects.ecoResortLandscape.bigDescription",
 
-        projectSupervisor_role_1: "Landscape Architect",
-        projectSupervisor_role_2: "Irrigation Specialist",
-        projectSupervisor_role_3: "Site Implementation Supervisor",
-
-        big_Description:
-            "This eco-resort landscape project integrates sustainable materials, native plant selection, and water-efficient irrigation systems. The aim is to create a beautiful, eco-friendly environment that enhances guest experience while minimizing environmental impact."
+        supervisors: [
+            {
+                image: supervisor_img_3,
+                name: "projects.ecoResortLandscape.supervisors.1.name",
+                role: "projects.ecoResortLandscape.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.ecoResortLandscape.supervisors.2.name",
+                role: "projects.ecoResortLandscape.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_5,
+                name: "projects.ecoResortLandscape.supervisors.3.name",
+                role: "projects.ecoResortLandscape.supervisors.3.role"
+            }
+        ]
     },
 
     {
         id: 14,
-        name: "Seaside Residential Villa",
-        category: "Residential",
+        key: "seasideResidentialVilla",
+        category: "categories.residential",
         image: project14,
-        description: "Modern villa design with seaside view and luxurious finishes.",
-        client: "El-Sahel Group",
-        location: "North Coast, Egypt",
+        filterCategory: "Residential",
 
-        projectSupervisor_img_1: supervisor_img_2,
-        projectSupervisor_img_2: supervisor_img_3,
-        projectSupervisor_img_3: supervisor_img_1,
 
-        projectSupervisor_name_1: "Eng. Ahmed El-Masry",
-        projectSupervisor_name_2: "Eng. Salma Tarek",
-        projectSupervisor_name_3: "Eng. Omar Fathi",
+        name: "projects.seasideResidentialVilla.name",
+        description: "projects.seasideResidentialVilla.description",
+        client: "projects.seasideResidentialVilla.client",
+        location: "projects.seasideResidentialVilla.location",
+        big_Description: "projects.seasideResidentialVilla.bigDescription",
 
-        projectSupervisor_role_1: "Lead Architect",
-        projectSupervisor_role_2: "Structural Engineer",
-        projectSupervisor_role_3: "Project Manager",
-
-        big_Description:
-            "This seaside residential villa project features modern architectural design with luxurious interior and exterior finishes. The design optimizes natural lighting, sea views, and functional layout while ensuring structural stability and long-lasting durability."
+        supervisors: [
+            {
+                image: supervisor_img_2,
+                name: "projects.seasideResidentialVilla.supervisors.1.name",
+                role: "projects.seasideResidentialVilla.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_3,
+                name: "projects.seasideResidentialVilla.supervisors.2.name",
+                role: "projects.seasideResidentialVilla.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.seasideResidentialVilla.supervisors.3.name",
+                role: "projects.seasideResidentialVilla.supervisors.3.role"
+            }
+        ]
     },
+
+
     {
         id: 15,
-        name: "Family Residential Complex",
-        category: "Residential",
+        key: "familyResidentialComplex",
+        category: "categories.residential",
         image: project15,
-        description: "A modern residential complex designed for families with integrated facilities.",
-        client: "Al-Madina Development",
-        location: "New Cairo, Egypt",
+        filterCategory: "Residential",
 
-        projectSupervisor_img_1: supervisor_img_3,
-        projectSupervisor_img_2: supervisor_img_1,
-        projectSupervisor_img_3: supervisor_img_2,
 
-        projectSupervisor_name_1: "Eng. Farah Youssef",
-        projectSupervisor_name_2: "Eng. Mostafa Adel",
-        projectSupervisor_name_3: "Eng. Hadi Samir",
+        name: "projects.familyResidentialComplex.name",
+        description: "projects.familyResidentialComplex.description",
+        client: "projects.familyResidentialComplex.client",
+        location: "projects.familyResidentialComplex.location",
+        big_Description: "projects.familyResidentialComplex.bigDescription",
 
-        projectSupervisor_role_1: "Lead Architect",
-        projectSupervisor_role_2: "Structural Engineer",
-        projectSupervisor_role_3: "Site Construction Manager",
+        supervisors: [
+            {
+                image: supervisor_img_3,
+                name: "projects.familyResidentialComplex.supervisors.1.name",
+                role: "projects.familyResidentialComplex.supervisors.1.role"
+            },
+            {
+                image: supervisor_img_1,
+                name: "projects.familyResidentialComplex.supervisors.2.name",
+                role: "projects.familyResidentialComplex.supervisors.2.role"
+            },
+            {
+                image: supervisor_img_2,
+                name: "projects.familyResidentialComplex.supervisors.3.name",
+                role: "projects.familyResidentialComplex.supervisors.3.role"
+            }
+        ]
+    },
 
-        big_Description:
-            "This residential complex was designed to provide a comfortable and efficient living environment for families. The project includes multi-unit buildings, green open spaces, and essential community facilities. The design focuses on maximizing natural light, ensuring privacy between units, and creating pedestrian-friendly pathways. Structural work was planned to meet modern safety standards while optimizing material usage. The final result delivers a high-quality living experience with long-term durability and architectural elegance."
-    }
 
 
 ];
