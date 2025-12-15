@@ -50,7 +50,7 @@ export default function TemporaryDrawer() {
         >
             <Box sx={{ display: 'flex', justifyContent: 'center' }} className="close-sidebar">
                 {/* ✅ هنا خليه div مش button علشان مايحصلش خطأ الـ button داخل button */}
-                <div onClick={toggleDrawer(false)}>
+                <div onClick={toggleDrawer(false)} style={{width: "100%"}} >
                     <Link to="/signin" style={{ textDecoration: 'none' }}>
                         <ShinyButton className="signIn-sidebar">{t('signIn')}</ShinyButton>
                     </Link>
@@ -62,7 +62,7 @@ export default function TemporaryDrawer() {
             <List>
                 {links.map((item) => (
                     <ListItem key={item.label} disablePadding>
-                        <ListItemButton component={Link} to={item.path}>
+                        <ListItemButton component={Link} to={item.path} style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
                             <ListItemText primary={item.label} />
                         </ListItemButton>
                     </ListItem>

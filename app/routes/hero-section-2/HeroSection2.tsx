@@ -84,14 +84,14 @@ const HeroSection2 = () => {
                         <h2>{t("what-we-h2")}</h2>
                         <p>{t("what-p")}</p>
                     </div>
-                    <button className="button">
-                        <a href="#" >
-                            {t("who-button")}
-                        </a>
-                        <div className="arrow">
-                          <img src={arrow} alt="arrow" />
-                        </div>
-                    </button>
+                    <Link to="/about">
+                      <button className="button">
+                          {t("who-button")}
+                          <div className="arrow">
+                            <img src={arrow} alt="arrow" />
+                          </div>
+                      </button>
+                    </Link>
                 </div>
 
                 <div className="image">
