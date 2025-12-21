@@ -1,7 +1,6 @@
-import type { Config } from "@react-router/dev/config";
+import { defineConfig } from "@react-router/dev";
+import { vercelPreset } from "@react-router/dev/preset";
 
-export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
-} satisfies Config;
+export default defineConfig({
+    presets: [vercelPreset()],
+});
