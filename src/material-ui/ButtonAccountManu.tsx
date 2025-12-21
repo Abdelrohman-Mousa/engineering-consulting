@@ -9,11 +9,12 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Logout from '@mui/icons-material/Logout';
 import {useAuth} from "../context/AuthContext";
-import {useNavigate} from "react-router";
+import {Link, useNavigate} from "react-router";
 import { logout } from "../auth/authService";
+import {ShinyButton} from "~/components/ui/shiny-button";
 
 export default function ButtonAccountManu() {
-    const {user} = useAuth();
+    const {user, role} = useAuth();
 
     const navigate = useNavigate();
 
@@ -105,6 +106,19 @@ export default function ButtonAccountManu() {
                         )}
                     </Avatar>
                     Profile
+                </MenuItem>
+
+                <MenuItem>
+                    {user && role === "admin" && (
+                        <div className="dashboard-icon">
+                            <Link to="/dashboard" style={{display: "flex", alignItems: "center"}}>
+                                <ShinyButton>
+                                    <img src="/assets/icons/dashboard.svg" alt="dashboard" style={{width: 32, height: 32}} />
+                                </ShinyButton>
+                                <p>Admin Dashboard</p>
+                            </Link>
+                        </div>
+                    )}
                 </MenuItem>
 
                 <Divider />

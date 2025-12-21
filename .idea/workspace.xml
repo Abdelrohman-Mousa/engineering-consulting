@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/ButtonAccountManu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ButtonAccountManu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +134,8 @@
       <workItem from="1766106868154" duration="6533000" />
       <workItem from="1766169708667" duration="12933000" />
       <workItem from="1766263587476" duration="22290000" />
-      <workItem from="1766325277526" duration="5981000" />
+      <workItem from="1766325277526" duration="6596000" />
+      <workItem from="1766336078050" duration="2995000" />
     </task>
     <servers />
   </component>
