@@ -11,10 +11,30 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Divider from '@mui/material/Divider';
 import { useTranslation } from 'react-i18next';
 import { ShinyButton } from '~/components/ui/shiny-button';
-import { Link } from 'react-router'; // ✅ مهم جدًا
+import {Link, useNavigate} from 'react-router';
+import {useAuth} from "../../../src/context/AuthContext";
+import ButtonAccountManu from "../../../src/material-ui/ButtonAccountManu";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Logout from "@mui/icons-material/Logout";
+import MenuItem from "@mui/material/MenuItem"; // ✅ مهم جدًا
+import { logout } from "../../../src/auth/authService";
 
 export default function TemporaryDrawer() {
     const { t } = useTranslation();
+
+    const {user} = useAuth();
+    const navigate = useNavigate();
+
+    // logOut
+    const handleLogout = async () => {
+        try {
+            await logout();
+            navigate("/signin"); // أو "/"
+        } catch (err) {
+            alert(err.message);
+        }
+    };
+
     const [open, setOpen] = React.useState(false);
     const [dir, setDir] = React.useState<'left' | 'right'>('left');
 
@@ -48,12 +68,18 @@ export default function TemporaryDrawer() {
             role="presentation"
             onClick={toggleDrawer(false)}
         >
-            <Box sx={{ display: 'flex', justifyContent: 'center' }} className="close-sidebar">
-                {/* ✅ هنا خليه div مش button علشان مايحصلش خطأ الـ button داخل button */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', textAlign: "center" }} className="close-sidebar">
+
                 <div onClick={toggleDrawer(false)} style={{width: "100%"}} >
-                    <Link to="/signin" style={{ textDecoration: 'none' }}>
-                        <ShinyButton className="signIn-sidebar">{t('signIn')}</ShinyButton>
-                    </Link>
+                    {!user ? (
+                        <Link to="/signin" style={{ textDecoration: 'none' }}>
+                            <ShinyButton className="signIn-sidebar">{t('signIn')}</ShinyButton>
+                        </Link>
+                    ) : (
+                        <div className="user-avatar">
+                            <ButtonAccountManu />
+                        </div>
+                    )}
                 </div>
             </Box>
 
@@ -78,7 +104,18 @@ export default function TemporaryDrawer() {
             </IconButton>
             <Drawer anchor={dir} open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
+
+                <MenuItem
+                    onClick={handleLogout}
+                    style={{display: "flex", justifyContent: "center", fontSize: 20}}
+                >
+                    <ListItemIcon>
+                        <Logout fontSize="small" />
+                    </ListItemIcon>
+                    Logout
+                </MenuItem>
             </Drawer>
+
         </div>
     );
 }

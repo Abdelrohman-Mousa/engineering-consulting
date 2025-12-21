@@ -5,9 +5,14 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import TemporaryDrawer from "~/components/sidebar/TemporaryDrawer";
 import { Link, useLocation } from "react-router"; // ← مهم جدًا
+import { useAuth } from "../../../src/context/AuthContext";
+import ButtonAccountManu from "../../../src/material-ui/ButtonAccountManu";
 
 const Navbar = () => {
     const { t } = useTranslation();
+
+    const { user, role } = useAuth();
+
     const location = useLocation(); // ← عشان نعرف الصفحة الحالية
 
     const [isClient, setIsClient] = useState(false);
@@ -62,6 +67,17 @@ const Navbar = () => {
             </div>
 
             <div className="settings">
+
+                {user && role === "admin" && (
+                    <div className="dashboard-icon">
+                        <Link to="/dashboard">
+                            <ShinyButton>
+                                <img src="/assets/icons/dashboard.svg" alt="dashboard" />
+                            </ShinyButton>
+                        </Link>
+                    </div>
+                )}
+
                 <div className="lang">
                     <ButtonLanguages />
                 </div>
@@ -71,9 +87,17 @@ const Navbar = () => {
                         <img src={themeMode === 'light' ? "/assets/icons/dark-mode.svg" : "/assets/icons/light-mode.svg"} alt="mode" />
                     </ShinyButton>
                 </div>
-                <Link to="/signin">
-                    <ShinyButton className="signIn">{t("signIn")}</ShinyButton>
-                </Link>
+
+                {/*Sign In*/}
+                {!user ? (
+                  <Link to="/signin">
+                      <ShinyButton className="signIn">{t("signIn")}</ShinyButton>
+                  </Link>
+                ) : (
+                    <div className="user-avatar">
+                        <ButtonAccountManu />
+                    </div>
+                )}
 
                 {/* Sidebar Menu */}
                 <div className="sidebar-menu">

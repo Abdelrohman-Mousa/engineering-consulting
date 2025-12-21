@@ -12,6 +12,7 @@ import "./app.scss";
 import Navbar from "~/components/navbar/Navbar";
 import Footer from "~/components/footer/Footer";
 import '../src/i18n';
+import {AuthProvider} from "../src/context/AuthContext";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -51,29 +52,20 @@ export default function App() {
   const location = useLocation();
 
   // ⛔ الصفحات اللي مش عايز فيها Navbar و Footer
-  const hideLayoutRoutes = ["/contact", "/signin","/projectsDetails/"];
-/*
-  // 🔍 فحص هل الصفحة الحالية من الصفحات دي؟
-   const hideLayout = hideLayoutRoutes.includes(location.pathname);
+  const hideLayoutRoutes = ["/contact", "/signin","/projectsDetails/", "/dashboard"];
 
-   return (
-       <div className="app">
-         {!hideLayout && <Navbar />}
-         <Outlet />
-         {!hideLayout && <Footer />}
-       </div>
-   );
- */
   const hideLayout = hideLayoutRoutes.some(route =>
       location.pathname.startsWith(route)
   );
 
   return (
-      <div className="app">
-        {!hideLayout && <Navbar />}
-        <Outlet />
-        {!hideLayout && <Footer />}
-      </div>
+      <AuthProvider>
+        <div className="app">
+          {!hideLayout && <Navbar />}
+          <Outlet />
+          {!hideLayout && <Footer />}
+        </div>
+      </AuthProvider>
   );
 }
 

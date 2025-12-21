@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/signIn/signIn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/signIn/signIn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projects/engineering-consulting/public/assets/icons&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,14 +80,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\engineering-consulting\public\assets\images" />
       <recent name="E:\projects\engineering-consulting\public\assets\icons" />
+      <recent name="E:\projects\engineering-consulting\public\assets\images" />
       <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\engineering-consulting\src" />
-      <recent name="E:\projects\engineering-consulting\app\routes" />
       <recent name="E:\projects\engineering-consulting\app" />
+      <recent name="E:\projects\engineering-consulting\app\routes" />
       <recent name="E:\projects\engineering-consulting\app\routes\projects" />
       <recent name="E:\projects\engineering-consulting\public\assets\images" />
     </key>
@@ -132,7 +137,11 @@
       <workItem from="1765462057447" duration="21811000" />
       <workItem from="1765638770076" duration="9609000" />
       <workItem from="1765754538022" duration="15663000" />
-      <workItem from="1765820849877" duration="1359000" />
+      <workItem from="1765820849877" duration="4228000" />
+      <workItem from="1766106868154" duration="6533000" />
+      <workItem from="1766169708667" duration="12933000" />
+      <workItem from="1766263587476" duration="22290000" />
+      <workItem from="1766325277526" duration="2114000" />
     </task>
     <servers />
   </component>
