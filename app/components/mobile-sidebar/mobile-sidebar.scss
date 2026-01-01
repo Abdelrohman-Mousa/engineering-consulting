@@ -1,0 +1,39 @@
+@use "../../index" as *;
+
+.mobile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; // gap-5 = 20px
+  border-radius: 1rem;
+
+  // lg:hidden  → يخفيه على الشاشات الكبيرة
+  @include desktop {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(197, 195, 195, 0.24);
+    width: 100%;
+
+    .logo-mobile-sidebar {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+}

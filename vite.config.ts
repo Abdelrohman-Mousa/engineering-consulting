@@ -19,6 +19,9 @@ export default defineConfig({
     include: ['rough-notation'] // يجبر Vite على تحويل rough-notation
   },
   ssr: {
-    noExternal: ['rough-notation'], // لو بتعمل SSR أو Deploy على Vercel
+    noExternal: [
+      "rough-notation",
+      /@syncfusion/
+    ]
   }
 });

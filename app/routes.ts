@@ -12,9 +12,12 @@ export default [
     route("contact", "routes/contact/Contact.tsx"),
     route("signin", "routes/signIn/SignIn.tsx"),
 
-    // ✅ Dashboard (Protected + Layout)
-    route("dashboard", "routes/dashboard/_layout.tsx", [
-        index("routes/dashboard/index.tsx"),
+    // ✅ Dashboard Layout
+    route("dashboard", "routes/dashboard/index.tsx", [
+        index("routes/dashboard/dashboard-overview/PageOverview.tsx"),
+        route("messages", "routes/dashboard/messages/MessageContact.tsx"),
+        route("users", "routes/dashboard/users/Users.tsx"),
+        route("consulting", "routes/dashboard/consultation-requests/ConsultationRequests.tsx"),
     ]),
 
 ] satisfies RouteConfig;

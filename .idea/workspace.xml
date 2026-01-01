@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-ui/ButtonAccountManu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ButtonAccountManu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +85,11 @@
       <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\app\components\sidebar-admin-dashboard" />
       <recent name="E:\projects\engineering-consulting\src" />
       <recent name="E:\projects\engineering-consulting\app" />
       <recent name="E:\projects\engineering-consulting\app\routes" />
       <recent name="E:\projects\engineering-consulting\app\routes\projects" />
-      <recent name="E:\projects\engineering-consulting\public\assets\images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -135,7 +142,9 @@
       <workItem from="1766169708667" duration="12933000" />
       <workItem from="1766263587476" duration="22290000" />
       <workItem from="1766325277526" duration="6596000" />
-      <workItem from="1766336078050" duration="2995000" />
+      <workItem from="1766336078050" duration="3717000" />
+      <workItem from="1766812506677" duration="22748000" />
+      <workItem from="1767168650362" duration="29196000" />
     </task>
     <servers />
   </component>

@@ -2,11 +2,19 @@
 export default {
     darkMode: ["class"],
     content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+		// "./app/**/*.{js,ts,jsx,tsx}",
+		"./app/routes/dashboard/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
+		"./app/components/sidebar-admin-dashboard/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
+		"./app/components/mobile-sidebar/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
+
   ],
   theme: {
   	extend: {
+		maxWidth: {
+			'270': '270px', // custom width
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
