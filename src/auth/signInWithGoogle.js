@@ -12,6 +12,8 @@ export const signInWithGoogle = async () => {
         // احفظ المستخدم في Firestore لو جديد
         await setDoc(doc(db, "users", user.uid), {
             email: user.email,
+            name: user.displayName,
+            imageUrl: user.photoURL,
             role: "user", // العملاء الافتراضيين
             createdAt: serverTimestamp(),
         }, { merge: true });

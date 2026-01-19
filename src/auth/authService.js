@@ -15,6 +15,7 @@ import {
 import { auth } from "../config/firebase";
 import { db } from "../config/firebase";
 
+const DEFAULT_AVATAR ="/assets/icons/user-avatar.svg";
 // Signup
 export const signup = async (email, password) => {
     const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -26,6 +27,8 @@ export const signup = async (email, password) => {
     if (!snap.exists()) {
         await setDoc(userRef, {
             email: res.user.email,
+            name: "New User",
+            imageUrl: DEFAULT_AVATAR,
             role: "user",
             createdAt: serverTimestamp(),
         });

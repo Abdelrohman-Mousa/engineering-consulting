@@ -5,10 +5,25 @@ import dayjs from "dayjs";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
-//
-// export const formatDate = (dateString: string): string => {
-//   return dayjs(dateString).format("MMMM DD, YYYY");
-// };
+
+
+export const formatDate = (createdAt: any): string => {
+  if (!createdAt) return "-";
+
+  // Firestore Timestamp
+  if (createdAt.toDate) {
+    return dayjs(createdAt.toDate()).format("MMMM DD, YYYY • hh:mm A");
+  }
+
+  // Object فيه seconds
+  if (createdAt.seconds) {
+    return dayjs(createdAt.seconds * 1000).format("MMMM DD, YYYY • hh:mm A");
+  }
+
+  return "-";
+};
+
+
 //
 // export function parseMarkdownToJson(markdownText: string): unknown | null {
 //   const regex = /```json\n([\s\S]+?)\n```/;
@@ -40,29 +55,29 @@ export function cn(...inputs: ClassValue[]) {
 // export function getFirstWord(input: string = ""): string {
 //   return input.trim().split(/\s+/)[0] || "";
 // }
-//
-// export const calculateTrendPercentage = (
-//     countOfThisMonth: number,
-//     countOfLastMonth: number
-// ): TrendResult => {
-//   if (countOfLastMonth === 0) {
-//     return countOfThisMonth === 0
-//         ? { trend: "no change", percentage: 0 }
-//         : { trend: "increment", percentage: 100 };
-//   }
-//
-//   const change = countOfThisMonth - countOfLastMonth;
-//   const percentage = Math.abs((change / countOfLastMonth) * 100);
-//
-//   if (change > 0) {
-//     return { trend: "increment", percentage };
-//   } else if (change < 0) {
-//     return { trend: "decrement", percentage };
-//   } else {
-//     return { trend: "no change", percentage: 0 };
-//   }
-// };
-//
+
+export const calculateTrendPercentage = (
+    countOfThisMonth: number,
+    countOfLastMonth: number
+): TrendResult => {
+  if (countOfLastMonth === 0) {
+    return countOfThisMonth === 0
+        ? { trend: "no change", percentage: 0 }
+        : { trend: "increment", percentage: 100 };
+  }
+
+  const change = countOfThisMonth - countOfLastMonth;
+  const percentage = Math.abs((change / countOfLastMonth) * 100);
+
+  if (change > 0) {
+    return { trend: "increment", percentage };
+  } else if (change < 0) {
+    return { trend: "decrement", percentage };
+  } else {
+    return { trend: "no change", percentage: 0 };
+  }
+};
+
 // export const formatKey = (key: keyof TripFormData) => {
 //   return key
 //       .replace(/([A-Z])/g, " $1")

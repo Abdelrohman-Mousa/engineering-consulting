@@ -8,6 +8,7 @@ export default {
 		"./app/routes/dashboard/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
 		"./app/components/sidebar-admin-dashboard/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
 		"./app/components/mobile-sidebar/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
+		"./app/components/stats-card/**/*.{js,ts,jsx,tsx}", // صفحات Dashboard فقط
 
   ],
   theme: {

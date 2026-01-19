@@ -6,14 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/page-overview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/page-overview.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +145,19 @@
       <workItem from="1766325277526" duration="6596000" />
       <workItem from="1766336078050" duration="3717000" />
       <workItem from="1766812506677" duration="22748000" />
-      <workItem from="1767168650362" duration="29196000" />
+      <workItem from="1767168650362" duration="30152000" />
+      <workItem from="1767343729320" duration="4361000" />
+      <workItem from="1767608334432" duration="2292000" />
+      <workItem from="1767611098609" duration="12624000" />
+      <workItem from="1767876995297" duration="11454000" />
+      <workItem from="1767948554855" duration="12864000" />
+      <workItem from="1768043224588" duration="12350000" />
+      <workItem from="1768306051911" duration="9339000" />
+      <workItem from="1768415037648" duration="6181000" />
+      <workItem from="1768578615505" duration="9694000" />
+      <workItem from="1768689840091" duration="7243000" />
+      <workItem from="1768738462737" duration="8801000" />
+      <workItem from="1768828730755" duration="3789000" />
     </task>
     <servers />
   </component>

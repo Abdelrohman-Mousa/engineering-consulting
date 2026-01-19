@@ -1,0 +1,43 @@
+.users {
+  padding: 2rem 1rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; // gap-10 في Tailwind.
+  overflow-x: hidden;
+
+  .title-users {
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: rgba(0, 1, 17, 0.75);
+    }
+  }
+  .btn-load-more {
+    padding: 0.3rem 1rem;
+    background-color: rgba(119, 120, 122, 0.09);
+    color: #000000;
+    border: 1px solid rgba(11, 11, 11, 0.56);
+    border-radius: 1rem;
+    width: fit-content;
+  }
+}
+
+  .status-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;        // gap-1
+    width: 65px;         // w-[65px]
+    padding-top: 2px;    // py-[2px]
+    padding-bottom: 2px;
+    border-radius: 1rem; // rounded-2xl
+    mix-blend-mode: multiply;
+
+  }

@@ -80,6 +80,19 @@
         object-fit: cover;
         border-radius: 50%;
       }
+      span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 1.1rem;
+        background-color: rgba(3, 34, 41, 0.73);
+        color: #ffffff;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
       article {
         h2 {
           font-size: 1rem;

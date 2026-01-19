@@ -1,0 +1,18 @@
+@use "../../../index" as *;
+
+.page-overview {
+  padding: 2rem 1rem;
+
+  .title-overview {
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: rgba(0, 1, 17, 0.75);
+    }
+  }
+}
