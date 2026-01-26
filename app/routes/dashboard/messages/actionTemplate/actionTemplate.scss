@@ -1,0 +1,17 @@
+.action-template {
+  .action-btn {
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 1px solid rgba(11, 11, 11, 0.35);
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition:  background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba(119, 120, 122, 0.09);
+      border: 1px solid rgba(11, 11, 11, 0.8);
+    }
+  }
+}

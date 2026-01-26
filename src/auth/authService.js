@@ -28,7 +28,7 @@ export const signup = async (email, password) => {
         await setDoc(userRef, {
             email: res.user.email,
             name: "New User",
-            imageUrl: DEFAULT_AVATAR,
+            imageUrl: `https://ui-avatars.com/api/?name=${encodeURIComponent(res.user.email)}`,
             role: "user",
             createdAt: serverTimestamp(),
         });

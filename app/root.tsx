@@ -29,6 +29,8 @@ export const links: Route.LinksFunction = () => [
 ];
 
 import { registerLicense } from "@syncfusion/ej2-base";
+import { Toaster } from "react-hot-toast";
+
 
 registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY);
 
@@ -64,13 +66,29 @@ export default function App() {
   );
 
   return (
-      <AuthProvider>
+      <>
+        <Toaster
+            toastOptions={{
+              style: {
+                fontSize: "14px",
+              },
+              success: {
+                duration: 3000,
+              },
+              error: {
+                duration: 4000,
+              },
+            }}
+        />
+
+        <AuthProvider>
         <div className="app">
           {!hideLayout && <Navbar />}
           <Outlet />
           {!hideLayout && <Footer />}
         </div>
       </AuthProvider>
+      </>
   );
 }
 

@@ -57,7 +57,7 @@ const Users = () => {
                        headerText="Name"
                        width="150"
                        textAlign="Left"
-                       template={(props: UserData) => (
+                       template={(props: any) => (
                            <div className="flex items-center gap-1.5 px-4">
                                <img src={props.imageUrl} alt="users" className="rounded-full size-8 aspect-square" referrerPolicy="no-referrer"/>
                                <p>{props.name}</p>
@@ -84,7 +84,7 @@ const Users = () => {
                        headerText="Type"
                        width="100"
                        textAlign="Left"
-                       template={({role}: UserData) => (
+                       template={({role}: any) => (
                            <article className={cn('status-column', role === "user" ? "bg-green-100" : "bg-red-100")}>
                                <div className={cn('size-1.5 rounded-full', role === "user" ? "bg-green-700" : "bg-red-700")} />
                                    <h3 className={cn('font-inter text-xs font-medium', role === "user" ? "text-green-900" : "text-red-950")}>

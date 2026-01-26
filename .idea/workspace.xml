@@ -6,15 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/page-overview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/page-overview.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/messages/MessageContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/messages/MessageContact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/authService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,12 @@
       <workItem from="1768578615505" duration="9694000" />
       <workItem from="1768689840091" duration="7243000" />
       <workItem from="1768738462737" duration="8801000" />
-      <workItem from="1768828730755" duration="3789000" />
+      <workItem from="1768828730755" duration="7317000" />
+      <workItem from="1768935579677" duration="32165000" />
+      <workItem from="1769182772248" duration="17277000" />
+      <workItem from="1769265062576" duration="4142000" />
+      <workItem from="1769323542675" duration="15541000" />
+      <workItem from="1769432245121" duration="8609000" />
     </task>
     <servers />
   </component>
