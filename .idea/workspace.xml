@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/messages/MessageContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/messages/MessageContact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/signIn/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/messages/actionTemplate/ActionTemplate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/messages/actionTemplate/ActionTemplate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/messages/message-contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/messages/message-contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/ButtonMessageMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ButtonMessageMenu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +157,8 @@
       <workItem from="1769182772248" duration="17277000" />
       <workItem from="1769265062576" duration="4142000" />
       <workItem from="1769323542675" duration="15541000" />
-      <workItem from="1769432245121" duration="8609000" />
+      <workItem from="1769432245121" duration="9989000" />
+      <workItem from="1769511097513" duration="15336000" />
     </task>
     <servers />
   </component>

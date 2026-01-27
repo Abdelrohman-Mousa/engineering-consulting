@@ -6,6 +6,7 @@ import type { MenuProps } from "@mui/material";
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import type { MessageFilter } from "/src/types/message"
 
 const StyledMenu = styled((props: MenuProps) => (
     <Menu
@@ -53,7 +54,12 @@ const StyledMenu = styled((props: MenuProps) => (
     },
 }));
 
-export default function ButtonMessageMenu() {
+interface ButtonMessageMenuProps {
+    onFilterChange: (filter: MessageFilter) => void;
+}
+
+
+export default function ButtonMessageMenu({ onFilterChange }: ButtonMessageMenuProps) {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -75,37 +81,62 @@ export default function ButtonMessageMenu() {
                 onClick={handleClick}
                 endIcon={<KeyboardArrowDownIcon />}
             >
-                Felter Messages
+                Filter Messages
             </Button>
             <StyledMenu
                 id="demo-customized-menu"
-                slotProps={{
-                    list: {
-                        'aria-labelledby': 'demo-customized-button',
-                    },
+                MenuListProps={{
+                    'aria-labelledby': 'demo-customized-button',
                 }}
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose} disableRipple>
+
+            <MenuItem
+                    onClick={() => {
+                        onFilterChange("All");
+                        handleClose();
+                    }}
+                    disableRipple
+                >
                     All
                     <div className="absolute right-0 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#4CAF50"}}/>
                     <div className="absolute right-2 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#2196F3"}}/>
                     <div className="absolute right-4 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#9E9E9E"}}/>
                 </MenuItem>
+
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={handleClose} disableRipple>
+                <MenuItem
+                    onClick={() => {
+                        onFilterChange("New");
+                        handleClose();
+                    }}
+                    disableRipple
+                >
                     New
                     <div className="absolute right-0 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#4CAF50"}} />
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={handleClose} disableRipple>
+
+                <MenuItem
+                    onClick={() => {
+                        onFilterChange("Read");
+                        handleClose();
+                    }}
+                    disableRipple
+                >
                     Read
                     <div className="absolute right-0 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#2196F3"}} />
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={handleClose} disableRipple>
+                <MenuItem
+                    onClick={() => {
+                        onFilterChange("Closed");
+                        handleClose();
+                    }}
+                    disableRipple
+                >
                     Closed
                     <div className="absolute right-0 rounded-full w-3 h-3 mx-2" style={{backgroundColor: "#9E9E9E"}} />
                 </MenuItem>

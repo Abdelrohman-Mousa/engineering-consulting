@@ -18,6 +18,7 @@ const ActionTemplate: React.FC<ActionTemplateProps> = ({ rowData, onView }) => {
     return (
         <div className="action-template">
             <button
+                type="button"
                 className="action-btn"
                 onClick={() => {onView(rowData)}}
             >
