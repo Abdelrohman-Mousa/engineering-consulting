@@ -11,6 +11,8 @@ import HalfRating from "../../../src/material-ui/HalfRating";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
+import { Link } from "react-router-dom";
+
 
 const textVariants = {
     initial: {
@@ -81,14 +83,16 @@ const HeroSection = () => {
                     </div>
                 </motion.div>
                 <div className="button-hero-section">
-                    <ShinyButton >
-                        <div className="button-icon">
-                        <h4>{t("button-hero-section")}</h4>
-                            <div className="img-wrapper">
-                             <img src={arrow} alt="arrow"/>
-                            </div>
-                        </div>
-                    </ShinyButton>
+                    <Link to="/consultationRequest">
+                      <ShinyButton >
+                          <div className="button-icon">
+                          <h4>{t("button-hero-section")}</h4>
+                              <div className="img-wrapper">
+                               <img src={arrow} alt="arrow"/>
+                              </div>
+                          </div>
+                      </ShinyButton>
+                    </Link>
 
                     <h3 className="desc">{t("title-2-HeroSection")}</h3>
                 </div>

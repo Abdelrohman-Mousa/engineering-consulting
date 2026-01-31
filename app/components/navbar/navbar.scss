@@ -183,7 +183,11 @@ body.dark {
   .navbar {
     background-color: var(--background-navbar-dark);
     color: var(--text-color-light);
-
+    .dashboard-icon {
+      img {
+        filter: invert(1);
+      }
+    }
     .logo img {
         filter: invert(1);
     }

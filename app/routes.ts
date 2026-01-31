@@ -8,7 +8,7 @@ export default [
     route("about", "routes/about/About.tsx"),
     route("projects", "routes/projects/Projects.tsx"),
     route("projectsDetails/:id", "routes/pages/ProjectDetails.$id.tsx"),
-    route("services", "routes/services/Services.tsx"),
+    route("consultationRequest", "routes/consultationRequest/ConsultationRequest.tsx"),
     route("contact", "routes/contact/Contact.tsx"),
     route("signin", "routes/signIn/SignIn.tsx"),
 

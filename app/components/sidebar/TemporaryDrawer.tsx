@@ -49,7 +49,7 @@ export default function TemporaryDrawer() {
         { label: t('Home'), path: '/' },
         { label: t('About'), path: '/about' },
         { label: t('Projects'), path: '/projects' },
-        { label: t('Services'), path: '/services' },
+        { label: t('Services'), path: '/consultationRequest' },
         { label: t('Contact'), path: '/contact' },
     ];
 
