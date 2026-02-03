@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
-export function Dropzone() {
+type DropzoneProps = {
+    onFileSelect?: (file: File | null) => void;
+};
+
+export function Dropzone({ onFileSelect }: DropzoneProps) {
     const [file, setFile] = useState<File | null>(null);
+    const [preview, setPreview] = useState<string | null>(null);
 
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
         accept: {
@@ -16,7 +20,6 @@ export function Dropzone() {
         multiple: false,
         onDrop: (acceptedFiles) => {
             const selectedFile = acceptedFiles[0];
-
             if (!selectedFile) return;
 
             if (selectedFile.size > 5 * 1024 * 1024) {
@@ -25,15 +28,36 @@ export function Dropzone() {
             }
 
             setFile(selectedFile);
+            onFileSelect?.(selectedFile);
+
+            // Image preview
+            if (selectedFile.type.startsWith("image/")) {
+                const url = URL.createObjectURL(selectedFile);
+                setPreview(url);
+            } else {
+                setPreview(null);
+            }
         },
     });
 
+    // Cleanup preview URL
+    useEffect(() => {
+        return () => {
+            if (preview) URL.revokeObjectURL(preview);
+        };
+    }, [preview]);
+
+    const handleRemove = () => {
+        setFile(null);
+        setPreview(null);
+        onFileSelect?.(null);
+    };
 
     return (
         <Box
             {...getRootProps()}
+            className="dropzone"
             sx={{
-                className: "dropzone",
                 border: "2px dashed",
                 borderColor: isDragActive ? "primary.main" : "grey.400",
                 borderRadius: "16px",
@@ -41,7 +65,6 @@ export function Dropzone() {
                 textAlign: "center",
                 cursor: "pointer",
                 bgcolor: file ? "grey.50" : "transparent",
-                // width: "450px",
             }}
         >
             <input {...getInputProps()} />
@@ -62,9 +85,9 @@ export function Dropzone() {
                     }}
                 >
                     {/* Image Preview */}
-                    {file.type.startsWith("image/") ? (
+                    {preview ? (
                         <img
-                            src={URL.createObjectURL(file)}
+                            src={preview}
                             alt="preview"
                             style={{
                                 maxWidth: "120px",
@@ -77,18 +100,19 @@ export function Dropzone() {
                         <PictureAsPdfIcon fontSize="large" color="error" />
                     )}
 
-                    <Typography variant="body2">
-                        {file.name}
-                    </Typography>
+                    <Typography variant="body2">{file.name}</Typography>
+
                     <Typography
                         variant="caption"
                         color="primary"
                         sx={{ cursor: "pointer" }}
-                        onClick={() => setFile(null)}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            handleRemove();
+                        }}
                     >
                         Remove file
                     </Typography>
-
                 </Box>
             )}
         </Box>

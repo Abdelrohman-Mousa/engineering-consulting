@@ -2,44 +2,38 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function CountrySelect() {
+type Props = {
+    value: string;
+    onChange: (value: string) => void;
+};
+
+export default function CountrySelect({ value, onChange }: Props) {
+
     return (
         <Autocomplete
-            id="country-select-demo"
-            sx={{ width: 380, borderRadius: "30px" }}
+            sx={{ width: 380 }}
             options={countries}
             autoHighlight
             getOptionLabel={(option) => option.label}
-            renderOption={(props, option) => {
-                const { key, ...optionProps } = props;
-                return (
-                    <Box
-                        key={key}
-                        component="li"
-                        sx={{ '& > img': { mr: 2, flexShrink: 0 } }}
-                        {...optionProps}
-                    >
-                        <img
-                            loading="lazy"
-                            width="20"
-                            srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
-                            src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
-                            alt=""
-                        />
-                        {option.label} ({option.code}) +{option.phone}
-                    </Box>
-                );
+            value={value ? countries.find(c => c.label === value) : null}
+            onChange={(_, newValue) => {
+                onChange(newValue?.label || "");
             }}
+            renderOption={(props, option) => (
+                <Box component="li" {...props}>
+                    <img
+                        loading="lazy"
+                        width="20"
+                        src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
+                        alt=""
+                    />
+                    {option.label} (+{option.phone})
+                </Box>
+            )}
             renderInput={(params) => (
                 <TextField
                     {...params}
                     label="Choose a country"
-                    slotProps={{
-                        htmlInput: {
-                            ...params.inputProps,
-                            autoComplete: 'new-password', // disable autocomplete and autofill
-                        },
-                    }}
                     sx={{
                         '& .MuiOutlinedInput-root': {
                             borderRadius: '30px',
@@ -50,6 +44,7 @@ export default function CountrySelect() {
         />
     );
 }
+
 interface CountryType {
     code: string;
     label: string;

@@ -6,16 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar/TemporaryDrawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section-2/HeroSection2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/services/services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/consultationRequest.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/dropzone/Dropzone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/dropzone/Dropzone.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/countrySelect/CountrySelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/countrySelect/CountrySelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/ConsultingType.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ConsultingType.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/FormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/FormInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/Priority.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/Priority.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-ui/TextareaField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/TextareaField.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +164,9 @@
       <workItem from="1769432245121" duration="9989000" />
       <workItem from="1769511097513" duration="16041000" />
       <workItem from="1769700748469" duration="26135000" />
-      <workItem from="1769877091351" duration="10278000" />
+      <workItem from="1769877091351" duration="11724000" />
+      <workItem from="1770038006636" duration="14128000" />
+      <workItem from="1770144803907" duration="1085000" />
     </task>
     <servers />
   </component>

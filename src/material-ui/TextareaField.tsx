@@ -1,28 +1,30 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function TextareaField() {
+type Props = {
+    value: string;
+    onChange: (value: string) => void;
+};
+
+export default function TextareaField({ value, onChange }: Props) {
     return (
         <Box
-            component="form"
             sx={{ '& .MuiTextField-root': { width: '100%' } }}
-            noValidate
             autoComplete="off"
         >
-            <div>
-                <TextField
-                    id="outlined-multiline-flexible"
-                    label="Description"
-                    multiline
-                    maxRows={4}
-                    sx={{
-                        '& .MuiOutlinedInput-root': {
-                            borderRadius: '30px',
-                            height: "120px"
-                        },
-                    }}
-                />
-            </div>
+            <TextField
+                label="Description"
+                multiline
+                maxRows={4}
+                value={value}
+                onChange={(e) => onChange(e.target.value)}
+                sx={{
+                    '& .MuiOutlinedInput-root': {
+                        borderRadius: '30px',
+                        height: "120px"
+                    },
+                }}
+            />
         </Box>
     );
 }

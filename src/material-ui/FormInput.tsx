@@ -1,23 +1,24 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function FormInput() {
+type Props = {
+    name: string;
+    email: string;
+    onChange: (field: string, value: string) => void;
+};
+
+export default function FormInput({ name, email, onChange }: Props) {
     return (
         <Box
-            component="form"
-            sx={{
-                '& > :not(style)': {
-                    // minWidth: 425,
-                },
-            }}
             autoComplete="off"
             className="input-email-name flex flex-col md:flex-row gap-3"
         >
             <TextField
-                className="input-name"
                 fullWidth
                 label="Name"
                 variant="outlined"
+                value={name}
+                onChange={(e) => onChange("name", e.target.value)}
                 sx={{
                     '& .MuiOutlinedInput-root': {
                         borderRadius: '30px',
@@ -29,6 +30,8 @@ export default function FormInput() {
                 fullWidth
                 label="Email"
                 variant="outlined"
+                value={email}
+                onChange={(e) => onChange("email", e.target.value)}
                 sx={{
                     '& .MuiOutlinedInput-root': {
                         borderRadius: '30px',

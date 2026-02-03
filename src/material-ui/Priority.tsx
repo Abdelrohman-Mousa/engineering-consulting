@@ -6,31 +6,35 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import type { SelectChangeEvent } from '@mui/material';
 
-export default function Priority() {
-    const [consultingType, setConsultingType] = React.useState('');
+type Props = {
+    value: string;
+    onChange: (value: string) => void;
+};
+
+export default function Priority({ value, onChange }: Props) {
 
     const handleChange = (event: SelectChangeEvent) => {
-        setConsultingType(event.target.value as string);
+        onChange(event.target.value as string);
     };
 
     return (
         <Box className="priority-level">
             <FormControl fullWidth>
-                <InputLabel id="consulting-type-label">
-                    Priority Type
+                <InputLabel id="priority-label">
+                    Priority Level
                 </InputLabel>
 
                 <Select
                     className="select-priority-level"
-                    style={{borderRadius: "30px"}}
-                    labelId="consulting-type-label"
-                    value={consultingType}
+                    style={{ borderRadius: "30px" }}
+                    labelId="priority-label"
+                    value={value}
                     label="Priority Level"
                     onChange={handleChange}
                 >
                     <MenuItem value="low">Low</MenuItem>
                     <MenuItem value="medium">Medium</MenuItem>
-                    <MenuItem value="hight">Hight</MenuItem>
+                    <MenuItem value="high">High</MenuItem>
                 </Select>
             </FormControl>
         </Box>
