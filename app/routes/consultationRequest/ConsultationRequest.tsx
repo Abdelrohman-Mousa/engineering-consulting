@@ -78,7 +78,7 @@ const Services = () => {
             await addDoc(collection(db, "consultations"), {
                 ...formData,
                 createdAt: serverTimestamp(),
-                status: "new",
+                status: "done",
             });
 
             toast.success("Consultation Sent 🚀");

@@ -1,0 +1,144 @@
+.consultation-requests-admin {
+  padding: 2rem 1rem;
+
+  .title-consultation-requests {
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: rgba(0, 1, 17, 0.75);
+    }
+  }
+
+  .consultation-requests-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+
+    .consultation-request-box {
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 1rem;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+        //border: 1px solid rgba(11, 11, 11, 0.25);
+      }
+      &.removing {
+        opacity: 0;
+        transform: translateX(-50px);
+        height: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .consultation-request-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        h2 {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        .consultation-request-priority {
+          font-size: 1rem;
+          color: rgba(0, 0, 0, 0.68);
+          background-color: rgba(200, 198, 198, 0.78);
+          padding: 0.2rem 0.5rem;
+          border-radius: 1rem;
+        }
+        .consultation-request-priority.high {
+          background-color: rgba(174, 62, 59, 0.11);
+          color: #ff0000;
+        }
+        .consultation-request-priority.medium {
+          background-color: rgba(188, 124, 43, 0.18);
+          color: #ff9200;
+        }
+        .consultation-request-priority.low {
+          background-color: rgba(56, 149, 57, 0.16);
+          color: #153901;
+        }
+      }
+        .consultation-request-content {
+          display: flex;
+          gap: 0.2rem;
+          flex-direction: column;
+          padding-top: 0.5rem;
+
+          h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.79);
+          }
+          .consulting-country-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: rgba(0, 0, 0, 0.68);
+
+            .consulting-status {
+              border: 1px dashed rgba(0, 0, 0, 0.24);
+              border-radius: 1rem;
+              padding: 0.1rem 0.5rem;
+              font-weight: 500;
+
+            }
+            .consulting-status.done {
+              background-color: rgba(216, 216, 216, 0.21);
+              color: #323131;
+            }
+            .consulting-status.inProgress {
+              background-color: rgba(181, 82, 82, 0.18);
+              color: #ff0009;
+            }
+            .consulting-status.pending {
+              background-color: rgba(22, 64, 106, 0.18);
+              color: #036fda;
+            }
+          }
+        }
+
+      .consultation-request-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.5rem;
+
+        .request-btn {
+          background-color: rgba(204, 204, 204, 0.51);
+          color: #000111;
+          padding: 0.3rem 0.8rem;
+          border-radius: 1rem;
+          font-size: 1rem;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          transition: background-color 0.2s ease;
+          &:hover {
+            background-color: rgba(204, 204, 204, 0.87);
+          }
+          img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+          }
+        }
+      }
+
+    }
+  }
+
+
+}

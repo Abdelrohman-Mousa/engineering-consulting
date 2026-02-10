@@ -24,6 +24,7 @@
     "@syncfusion/ej2-react-grids": "^32.1.20",
     "@syncfusion/ej2-react-maps": "^32.1.19",
     "@syncfusion/ej2-react-navigations": "^32.1.19",
+    "@syncfusion/ej2-react-popups": "^32.2.3",
     "@syncfusion/ej2-react-splitbuttons": "^32.1.19",
     "autosuggest-highlight": "^3.3.4",
     "class-variance-authority": "^0.7.1",
