@@ -8,12 +8,15 @@ import {useState, useEffect} from "react";
 import {formatDate} from "~/lib/utils";
 import toast from "react-hot-toast";
 import DeleteConfirm from "./DeleteConfirm";
+import RequestDetailsModal from "./request-details-modal/RequestDetailsModal";
 
 const ConsultationRequests = () => {
     const [requests, setRequests] = useState<any[]>([]);
     const [removingId, setRemovingId] = useState<string | null>(null);
     const [dialogVisible, setDialogVisible] = useState(false);
     const [selectedId, setSelectedId] = useState<string | null>(null);
+    const [selectedRequest, setSelectedRequest] = useState(null);
+
 
     useEffect(() => {
         const unsubscribe = onSnapshot(
@@ -106,7 +109,11 @@ const ConsultationRequests = () => {
                         </div>
 
                         <div className="consultation-request-buttons">
-                            <button className="request-btn">
+
+                            <button
+                                className="request-btn"
+                                onClick={() => setSelectedRequest(request)}
+                            >
                                 <img src={eye} alt="eye" />
                                 <p>Details</p>
                             </button>
@@ -127,6 +134,13 @@ const ConsultationRequests = () => {
                     </div>
                 ))}
             </div>
+            {selectedRequest && (
+                <RequestDetailsModal
+                    request={selectedRequest}
+                    onClose={() => setSelectedRequest(null)}
+                />
+            )}
+
         </div>
     )
 }
