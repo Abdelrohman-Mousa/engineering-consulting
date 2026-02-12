@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -169,7 +168,7 @@
       <workItem from="1770664756702" duration="12616000" />
       <workItem from="1770739788868" duration="12117000" />
       <workItem from="1770826735737" duration="16137000" />
-      <workItem from="1770892085158" duration="5612000" />
+      <workItem from="1770892085158" duration="17096000" />
     </task>
     <servers />
   </component>

@@ -3,11 +3,53 @@ import close from "/assets/icons/closed.svg";
 import userConsulting from "/assets/icons/user-consulting.svg";
 import dateIcon from "/assets/icons/dateTime.svg";
 import country from "/assets/icons/flagCountry.svg";
+import level from "/assets/icons/level.png";
 import { formatDate } from "~/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import pdfIcon from "/assets/images/pdfIcon.jpg"
+import {useState} from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
+import sendIcone from "/public/assets/icons/sent.svg";
 
 const RequestDetailsModal = ({ request, onClose }: any) => {
+    const [message, setMessage] = useState("");
+    const [sending, setSending] = useState(false);
+    const handleSendEmail = async () => {
+        if (!request?.email) {
+            toast.error("Client email not found");
+            return;
+        }
+
+        if (!message) {
+            toast.error("Write message first");
+            return;
+        }
+
+        setSending(true);
+
+        try {
+            await emailjs.send(
+                import.meta.env.VITE_EMAIL_SERVICE,
+                import.meta.env.VITE_EMAIL_TEMPLATE,
+                {
+                    to_email: request.email,
+                    client_name: request.name,
+                    message: message,
+                },
+                import.meta.env.VITE_EMAIL_KEY
+            );
+
+            toast.success("Email Sent Successfully");
+            setMessage("");
+        } catch (error) {
+            console.error(error);
+            toast.error("Failed to send email");
+        } finally {
+            setSending(false);
+        }
+    };
+
 
     const capitalize = (text: string) => {
         if (!text) return "";
@@ -51,7 +93,7 @@ const RequestDetailsModal = ({ request, onClose }: any) => {
                             </div>
 
                             <div className="consulting-info-priority">
-                                <img src={country} alt="country" />
+                                <img src={level} alt="country" />
                                 <p>{capitalize(request.priority)}</p>
                             </div>
 
@@ -98,6 +140,23 @@ const RequestDetailsModal = ({ request, onClose }: any) => {
                                     <span>No attachment</span>
                                 )}
                            </div>
+
+                            <div className="consulting-reply">
+                                <h3>Reply to Client</h3>
+
+                                <textarea
+                                    placeholder="Write your message..."
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                />
+
+                                <button onClick={handleSendEmail} disabled={sending}>
+                                    <img src={sendIcone} alt="send email" />
+                                    {sending ? "Sending..." : "Send Email"}
+                                </button>
+                            </div>
+
+
                         </div>
 
                     </motion.div>
