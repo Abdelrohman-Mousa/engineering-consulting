@@ -5,6 +5,7 @@ import dateIcon from "/assets/icons/dateTime.svg";
 import country from "/assets/icons/flagCountry.svg";
 import { formatDate } from "~/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import pdfIcon from "/assets/images/pdfIcon.jpg"
 
 const RequestDetailsModal = ({ request, onClose }: any) => {
 
@@ -70,6 +71,33 @@ const RequestDetailsModal = ({ request, onClose }: any) => {
                                 <h3>Consulting Type:</h3>
                                 <p>{capitalize(request.consultingType)}</p>
                             </div>
+                        </div>
+
+                        <div className="consulting-attachment">
+                           <div className="attachment">
+                                {request.attachment ? (
+                                    request.attachment.endsWith(".pdf") ? (
+                                        // PDF يظهر كأيقونة، قابل للنقر
+                                        <a
+                                            href={request.attachment}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-1"
+                                        >
+                                          <img className="img-pdf" src={pdfIcon} alt="pdf"/>
+                                        </a>
+                                    ) : (
+                                        // الصور تظهر مباشرة
+                                        <img
+                                            src={request.attachment}
+                                            alt="attachment"
+                                            className="img-attachment"
+                                        />
+                                    )
+                                ) : (
+                                    <span>No attachment</span>
+                                )}
+                           </div>
                         </div>
 
                     </motion.div>

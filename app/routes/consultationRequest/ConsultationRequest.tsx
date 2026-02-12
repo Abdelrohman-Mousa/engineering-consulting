@@ -12,6 +12,8 @@ import EnterpriseStars from "~/components/EnterpriseStars";
 import { db } from "/src/config/firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-hot-toast";
+import emailjs from "emailjs-com";
+
 
 type FormData = {
     name: string;
@@ -38,6 +40,32 @@ const itemVariants = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
+const uploadToCloudinary = async (file: File) => {
+    if (!file) return null;
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("upload_preset", "consultations_upload"); // تأكد من اسم preset صحيح
+    formData.append("folder", "consultations"); // اختياري
+    formData.append("resource_type", "auto"); // مهم للصور أو PDF أو أي نوع
+
+    const res = await fetch(
+        "https://api.cloudinary.com/v1_1/dztxccrnl/auto/upload",
+        {
+            method: "POST",
+            body: formData,
+        }
+    );
+
+    if (!res.ok) throw new Error("Upload failed");
+
+    const data = await res.json();
+    return data.secure_url ?? null;
+};
+
+
+
+
 const Services = () => {
     const [formData, setFormData] = useState<FormData>({
         name: "",
@@ -60,6 +88,26 @@ const Services = () => {
         setErrors(prev => ({ ...prev, [field]: "" }));
     };
 
+    const sendConfirmationEmail = async () => {
+        try {
+            await emailjs.send(
+                import.meta.env.VITE_EMAIL_SERVICE,
+                import.meta.env.VITE_EMAIL_TEMPLATE,
+                {
+                    user_name: formData.name,
+                    user_email: formData.email,
+                    consulting_type: formData.consultingType,
+                    priority: formData.priority,
+                    message: formData.description,
+                },
+                import.meta.env.VITE_EMAIL_KEY
+            );
+        } catch (error) {
+            console.error("Email failed:", error);
+        }
+    };
+
+
     const handleSubmit = async () => {
         // Validation
         if (!formData.name.trim()) return toast.error("Please enter your name!");
@@ -74,12 +122,21 @@ const Services = () => {
         setLoading(true);
 
         try {
-            // هنا مش هنعمل أي رفع للملف، بس هنخزن معلوماته لو موجود
+            let attachmentUrl: string | null = null;
+
+            if (formData.attachment && formData.attachment instanceof File) {
+                attachmentUrl = await uploadToCloudinary(formData.attachment);
+            }
+
             await addDoc(collection(db, "consultations"), {
                 ...formData,
+                attachment: attachmentUrl,
                 createdAt: serverTimestamp(),
-                status: "done",
+                status: "pending",
             });
+
+            await sendConfirmationEmail();
+
 
             toast.success("Consultation Sent 🚀");
 
@@ -154,6 +211,7 @@ const Services = () => {
 
                             <Dropzone
                                 onFileSelect={(file) => handleChange("attachment", file)}
+                                accept="image/*,.pdf,.doc,.docx" // أمثلة على الملفات المسموح بها
                             />
                         </div>
 

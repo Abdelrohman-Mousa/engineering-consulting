@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/ConsultationRequests.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/ConsultationRequests.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/consultation-requests.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/consultation-requests.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +82,11 @@
       <recent name="E:\projects\engineering-consulting\public\assets\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\engineering-consulting\public\assets\images" />
       <recent name="E:\projects\engineering-consulting\app\components\sidebar-admin-dashboard" />
       <recent name="E:\projects\engineering-consulting\src" />
       <recent name="E:\projects\engineering-consulting\app" />
       <recent name="E:\projects\engineering-consulting\app\routes" />
-      <recent name="E:\projects\engineering-consulting\app\routes\projects" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -164,7 +167,9 @@
       <workItem from="1770235058023" duration="2256000" />
       <workItem from="1770574979869" duration="7771000" />
       <workItem from="1770664756702" duration="12616000" />
-      <workItem from="1770739788868" duration="11634000" />
+      <workItem from="1770739788868" duration="12117000" />
+      <workItem from="1770826735737" duration="16137000" />
+      <workItem from="1770892085158" duration="5612000" />
     </task>
     <servers />
   </component>
