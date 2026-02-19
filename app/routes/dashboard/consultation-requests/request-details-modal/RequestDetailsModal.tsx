@@ -12,9 +12,10 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import sendIcone from "/public/assets/icons/sent.svg";
 
-const RequestDetailsModal = ({ request, onClose }: any) => {
+const RequestDetailsModal = ({ request, onClose, onChangeStatus  }: any) => {
     const [message, setMessage] = useState("");
     const [sending, setSending] = useState(false);
+
     const handleSendEmail = async () => {
         if (!request?.email) {
             toast.error("Client email not found");
@@ -155,8 +156,23 @@ const RequestDetailsModal = ({ request, onClose }: any) => {
                                     {sending ? "Sending..." : "Send Email"}
                                 </button>
                             </div>
+                        </div>
 
+                        <div className="consulting-status-btn">
+                            <p>Update the request status to reflect its current progress.</p>
+                            <div className="consulting-status">
+                                <button className="progress" onClick={() => onChangeStatus(request.id, "in_progress")}>
+                                    InProgress
+                                </button>
 
+                                <button className="completed" onClick={() => onChangeStatus(request.id, "completed")}>
+                                    Completed
+                                </button>
+
+                                <button className="rejected" onClick={() => onChangeStatus(request.id, "rejected")}>
+                                    Rejected
+                                </button>
+                            </div>
                         </div>
 
                     </motion.div>

@@ -3,7 +3,7 @@ import eye from "/assets/icons/eye2.svg";
 import deleteIcon from "/assets/icons/delete.svg";
 import doneIcon from "/assets/icons/check2.svg";
 import { db } from "src/config/firebase";
-import { collection, onSnapshot, doc, deleteDoc } from "firebase/firestore";
+import { collection, onSnapshot, doc, deleteDoc, updateDoc } from "firebase/firestore";
 import {useState, useEffect} from "react";
 import {formatDate} from "~/lib/utils";
 import toast from "react-hot-toast";
@@ -68,6 +68,28 @@ const ConsultationRequests = () => {
         return text.charAt(0).toUpperCase() + text.slice(1);
     };
 
+    const updateStatus = async (id: string, newStatus: string) => {
+        try {
+            const ref = doc(db, "consultations", id);
+            await updateDoc(ref, {
+                status: newStatus,
+            });
+            toast.success("Status updated!");
+        } catch (error) {
+            console.error(error);
+            toast.error("Failed to update status");
+        }
+    };
+
+    const statusCounts = requests.reduce(
+        (acc, req) => {
+            const status = req.status || "pending";
+            acc[status] = (acc[status] || 0) + 1;
+            return acc;
+        },
+        {} as Record<string, number>
+    );
+
 
 
     return (
@@ -83,6 +105,22 @@ const ConsultationRequests = () => {
                     A centralized dashboard to monitor and manage consulting requests efficiently and support better decision-making.
                 </p>
             </div>
+
+            <div className="status-counters">
+                <div className="counter pending">
+                    Pending:<span> {statusCounts["pending"] || 0}</span>
+                </div>
+                <div className="counter in_progress">
+                    In Progress: <span>{statusCounts["in_progress"] || 0}</span>
+                </div>
+                <div className="counter completed">
+                    Completed: <span>{statusCounts["completed"] || 0}</span>
+                </div>
+                <div className="counter rejected">
+                    Rejected: <span>{statusCounts["rejected"] || 0}</span>
+                </div>
+            </div>
+
 
             <div className="consultation-requests-boxes">
                 {requests.map(request => (
@@ -102,7 +140,6 @@ const ConsultationRequests = () => {
                             <div className="consulting-country-status">
                               <h2>{request.country}</h2>
                               <h2 className={`consulting-status ${request.status}`}>
-                                  {/*<span>Status:</span>*/}
                                   {request.status}
                               </h2>
                             </div>
@@ -126,8 +163,12 @@ const ConsultationRequests = () => {
                                 <p>Delete</p>
                             </button>
 
-                            <button className="request-btn">
-                                <img src={doneIcon} alt="done" />
+                            <button
+                                className="request-btn done"
+                                disabled={request.status === "completed"}
+                                onClick={() => updateStatus(request.id, "completed")}
+                            >
+                            <img src={doneIcon} alt="done" />
                               <p>Done</p>
                             </button>
                         </div>
@@ -138,6 +179,7 @@ const ConsultationRequests = () => {
                 <RequestDetailsModal
                     request={selectedRequest}
                     onClose={() => setSelectedRequest(null)}
+                    onChangeStatus={updateStatus}
                 />
             )}
 
