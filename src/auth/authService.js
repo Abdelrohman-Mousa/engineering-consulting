@@ -22,12 +22,13 @@ export const signup = async (email, password) => {
 
     const userRef = doc(db, "users", res.user.uid);
     const snap = await getDoc(userRef);
+    const username = res.user.email.split("@")[0];
 
     // نحفظه مرة واحدة بس
     if (!snap.exists()) {
         await setDoc(userRef, {
             email: res.user.email,
-            name: "New User",
+            name: username,
             imageUrl: `https://ui-avatars.com/api/?name=${encodeURIComponent(res.user.email)}`,
             role: "user",
             createdAt: serverTimestamp(),

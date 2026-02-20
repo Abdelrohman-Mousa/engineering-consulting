@@ -9,6 +9,7 @@ import {formatDate} from "~/lib/utils";
 import toast from "react-hot-toast";
 import DeleteConfirm from "./DeleteConfirm";
 import RequestDetailsModal from "./request-details-modal/RequestDetailsModal";
+import CircularIndeterminate from "~/components/CircularIndeterminate";
 
 const ConsultationRequests = () => {
     const [requests, setRequests] = useState<any[]>([]);
@@ -16,6 +17,8 @@ const ConsultationRequests = () => {
     const [dialogVisible, setDialogVisible] = useState(false);
     const [selectedId, setSelectedId] = useState<string | null>(null);
     const [selectedRequest, setSelectedRequest] = useState(null);
+    const [loading, setLoading] = useState(true);
+
 
 
     useEffect(() => {
@@ -27,9 +30,11 @@ const ConsultationRequests = () => {
                     ...doc.data()
                 }));
                 setRequests(data);
+                setLoading(false); // ✅ البيانات وصلت
             },
             (error) => {
                 console.error("Error fetching requests:", error);
+                setLoading(false);
             }
         );
 
@@ -90,7 +95,11 @@ const ConsultationRequests = () => {
         {} as Record<string, number>
     );
 
-
+    if (loading) {
+        return (
+           <CircularIndeterminate />
+        );
+    }
 
     return (
         <div className="consultation-requests-admin">

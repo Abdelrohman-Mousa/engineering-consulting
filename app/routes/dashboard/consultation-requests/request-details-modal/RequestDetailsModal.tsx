@@ -15,6 +15,7 @@ import sendIcone from "/public/assets/icons/sent.svg";
 const RequestDetailsModal = ({ request, onClose, onChangeStatus  }: any) => {
     const [message, setMessage] = useState("");
     const [sending, setSending] = useState(false);
+    const [imageLoading, setImageLoading] = useState(true);
 
     const handleSendEmail = async () => {
         if (!request?.email) {
@@ -119,7 +120,7 @@ const RequestDetailsModal = ({ request, onClose, onChangeStatus  }: any) => {
                         <div className="consulting-attachment">
                            <div className="attachment">
                                 {request.attachment ? (
-                                    request.attachment.endsWith(".pdf") ? (
+                                    request.attachment?.toLowerCase().endsWith(".pdf") ? (
                                         // PDF يظهر كأيقونة، قابل للنقر
                                         <a
                                             href={request.attachment}
@@ -131,11 +132,21 @@ const RequestDetailsModal = ({ request, onClose, onChangeStatus  }: any) => {
                                         </a>
                                     ) : (
                                         // الصور تظهر مباشرة
-                                        <img
-                                            src={request.attachment}
-                                            alt="attachment"
-                                            className="img-attachment"
-                                        />
+                                        <div className="image-wrapper">
+                                            {imageLoading && (
+                                                <div className="spinner"></div>
+                                            )}
+
+                                            <img
+                                                src={request.attachment}
+                                                alt="attachment"
+                                                className="img-attachment"
+                                                onLoad={() => setImageLoading(false)}
+                                                onError={() => setImageLoading(false)}
+                                                style={{ display: imageLoading ? "none" : "block" }}
+                                            />
+                                        </div>
+
                                     )
                                 ) : (
                                     <span>No attachment</span>

@@ -15,23 +15,16 @@ import {
     Tooltip,
 } from "@syncfusion/ej2-react-charts";
 import { Inject } from "@syncfusion/ej2-react-grids";
-import {getUserGrowthPerDay} from "../../../../src/auth/graph";
-
-// Consulting
-const consultGrowth = [
-    { month: "Oct", users: 1 },
-    { month: "Des", users: 2 },
-    { month: "Ods", users: 10 },
-    { month: "Apr", users: 4 },
-    { month: "Agu", users: 5 },
-    { month: "Seb", users: 6 },
-]
+import {getUserGrowthPerDay, getConsultGrowthPerDay} from "../../../../src/auth/graph";
 
 
 const PageOverview = () => {
 
     const [dashboardStats, setDashboardStats] = useState<any>(null);
     const [userGrowth, setUserGrowth] = useState<any[]>([]);
+
+    const [consultGrowth, setConsultGrowth] = useState<any[]>([]);
+
     useEffect(() => {
         const fetchStats = async () => {
             const data = await getDashboardStats();
@@ -43,11 +36,16 @@ const PageOverview = () => {
     // Graph
     useEffect(() => {
         getUserGrowthPerDay().then(setUserGrowth);
+        getConsultGrowthPerDay().then(setConsultGrowth);
+
     }, []);
 
-    if (!dashboardStats) return <CircularIndeterminate />;
+    if (!dashboardStats) {
+        return <CircularIndeterminate />;
+    }
 
-    const {totalUsers, usersJoined, totalConsultations, requestConsulting, userRole = { total: -15, currentMonth: 5, lastMonth: 0 }} = dashboardStats;
+
+    const {totalUsers, usersJoined, totalConsultations, requestConsulting, activeUsers} = dashboardStats;
 
     return (
         <div className="page-overview">
@@ -72,9 +70,9 @@ const PageOverview = () => {
                     />
                     <StatsCard
                         headerTitle="Active Users"
-                        total={userRole.total}
-                        currentMonthCount={userRole.currentMonth}
-                        lastMonthCount={userRole.lastMonth}
+                        total={activeUsers.total}
+                        currentMonthCount={activeUsers.currentMonth}
+                        lastMonthCount={activeUsers.lastMonth}
                     />
 
                 </div>
@@ -133,8 +131,8 @@ const PageOverview = () => {
                     <SeriesCollectionDirective>
                         <SeriesDirective
                             dataSource={consultGrowth}
-                            xName="month"
-                            yName="users"
+                            xName="day"
+                            yName="count"
                             type="Column"
                             name="Column"
                             columnWidth={0.3}
@@ -150,8 +148,8 @@ const PageOverview = () => {
                         />
                         <SeriesDirective
                             dataSource={consultGrowth}
-                            xName="month"
-                            yName="users"
+                            xName="day"
+                            yName="count"
                             type="SplineArea"
                             name="Wave"
                             fill="rgba(71, 132, 238, 0.3)"

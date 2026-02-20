@@ -1,3 +1,5 @@
+@use "../../../index" as *;
+
 .consultation-requests-admin {
   padding: 2rem 1rem;
 
@@ -18,26 +20,54 @@
     display: flex;
     gap: 12px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    @include mobile {
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+
+    }
 
     .counter {
-      padding: 6px 12px;
-      border-radius: 8px;
+      padding: 0.3rem 0.5rem;
+      border-radius: 1rem;
       background-color: #ffffff;
       color: rgb(0, 0, 0);
-      font-weight: 500;
+      font-size: 1rem;
+      font-weight: 400;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
       border: 1px solid rgba(11, 11, 11, 0.13);
 
       span {
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        padding: 2px 6px;
+        padding: 1px 3px;
         border: 1px solid rgba(11, 11, 11, 0.13);
         border-radius: 0.3rem;
         margin-left: 5px;
         font-weight: bold;
        }
     }
+    .pending {
+      background: #FEF3C7;
+      color: #B45309;
+      border: 1px solid #FCD34D;
 
+    }
+    .in_progress {
+      background: #DBEAFE;
+      color: #1D4ED8;
+      border: 1px solid #93C5FD;
+    }
+    .completed {
+      background: #D1FAE5;
+      color: #047857;
+      border: 1px solid #6EE7B7;
+    }
+    .rejected {
+      background: #FEE2E2;
+      color: #B91C1C;
+      border: 1px solid #FCA5A5;
+    }
   }
 
 
@@ -126,20 +156,27 @@
               color: #323131;
             }
             .consulting-status.in_progress {
-              background-color: rgba(31, 113, 9, 0.18);
-              color: #128700;
+              background-color: #DBEAFE;
+              color: #1D4ED8;
+              border: 1px solid #93C5FD;
             }
             .consulting-status.pending {
-              background-color: rgba(22, 64, 106, 0.18);
-              color: #036fda;
+              background-color: #FEF3C7;
+              color: #B45309;
+              border: 1px solid #FCD34D;
+
             }
             .consulting-status.completed {
-              background-color: rgb(0, 0, 0);
-              color: #ffffff;
+              background-color: #D1FAE5;
+              color: #047857;
+              border: 1px solid #6EE7B7;
+
             }
             .consulting-status.rejected {
-              background-color: rgb(202, 0, 0);
-              color: #c8ff00;
+              background-color: #FEE2E2;
+              color: #B91C1C;
+              border: 1px solid #FCA5A5;
+
             }
           }
         }

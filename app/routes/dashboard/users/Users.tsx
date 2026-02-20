@@ -59,7 +59,7 @@ const Users = () => {
                        textAlign="Left"
                        template={(props: any) => (
                            <div className="flex items-center gap-1.5 px-4">
-                               <img src={props.imageUrl} alt="users" className="rounded-full size-8 aspect-square" referrerPolicy="no-referrer"/>
+                               <img src={props.imageUrl} alt="users" className="rounded-full size-8 aspect-square text-xl font-bold" referrerPolicy="no-referrer"/>
                                <p>{props.name}</p>
                            </div>
                        )}
