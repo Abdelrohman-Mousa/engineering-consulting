@@ -18,6 +18,18 @@
   }
 }
 
+.pdf-modal-content {
+  width: 60%;
+  height: 700px;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 9999;
+  top: 5rem;
+
+}
 .modal-content {
   background: #fff;
   width: 70%;
@@ -201,7 +213,7 @@
     flex-wrap: wrap;
 
     .attachment {
-      width: 50%;
+      width: 30%;
       height: 300px;
       background-color: rgba(255, 255, 255, 0.24);
       padding: 1rem;

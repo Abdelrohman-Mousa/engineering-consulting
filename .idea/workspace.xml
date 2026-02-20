@@ -6,17 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/contact/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/contact/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/ConsultationRequests.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/ConsultationRequests.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/consultation-requests.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/consultation-requests.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sidebar-admin-dashboard/navitems.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/RequestDetailsModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/consultation-requests/request-details-modal/request-details-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/dashboard-overview/PageOverview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/dashboard/users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/signIn/signIn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/signIn/signIn.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/authService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/dashboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/dashboard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/graph.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/graph.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/signInWithGoogle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +174,8 @@
       <workItem from="1770892085158" duration="18819000" />
       <workItem from="1770984166285" duration="9702000" />
       <workItem from="1771416754474" duration="1969000" />
-      <workItem from="1771504979209" duration="13322000" />
+      <workItem from="1771504979209" duration="14262000" />
+      <workItem from="1771590636222" duration="5708000" />
     </task>
     <servers />
   </component>

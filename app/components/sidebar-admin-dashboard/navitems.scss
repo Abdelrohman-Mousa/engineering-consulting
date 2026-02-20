@@ -94,6 +94,9 @@
         justify-content: center;
       }
       article {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         h2 {
           font-size: 1rem;
           font-weight: 500;
@@ -101,6 +104,9 @@
         p {
           font-size: 0.9rem;
           font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
     }
