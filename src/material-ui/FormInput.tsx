@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import {useTranslation} from "react-i18next";
 
 type Props = {
     name: string;
@@ -8,6 +9,8 @@ type Props = {
 };
 
 export default function FormInput({ name, email, onChange }: Props) {
+    const { t } = useTranslation();
+
     return (
         <Box
             autoComplete="off"
@@ -15,7 +18,7 @@ export default function FormInput({ name, email, onChange }: Props) {
         >
             <TextField
                 fullWidth
-                label="Name"
+                label={t("from-name")}
                 variant="outlined"
                 value={name}
                 onChange={(e) => onChange("name", e.target.value)}
@@ -28,7 +31,7 @@ export default function FormInput({ name, email, onChange }: Props) {
 
             <TextField
                 fullWidth
-                label="Email"
+                label={t("email")}
                 variant="outlined"
                 value={email}
                 onChange={(e) => onChange("email", e.target.value)}

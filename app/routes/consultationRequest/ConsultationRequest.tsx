@@ -13,6 +13,8 @@ import { db } from "/src/config/firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-hot-toast";
 import emailjs from "emailjs-com";
+import {useTranslation} from "react-i18next";
+
 
 
 type FormData = {
@@ -63,10 +65,9 @@ const uploadToCloudinary = async (file: File) => {
     return data.secure_url ?? null;
 };
 
-
-
-
 const Services = () => {
+    const { t } = useTranslation();
+
     const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
@@ -163,8 +164,8 @@ const Services = () => {
         <div className="consultation-request">
             <div className="consultation-request-title" style={{ position: "relative" }}>
                 <EnterpriseStars />
-                <h1>Get Expert Consultation</h1>
-                <p>Tell us about your case and our experts will get back to you with the best solution.</p>
+                <h1>{t("consultingTitle")}</h1>
+                <p>{t("consultingPragraph")}</p>
             </div>
 
             <motion.div
@@ -206,7 +207,7 @@ const Services = () => {
                     <motion.div className="attachments" variants={itemVariants}>
                         <div className="file-dropzone flex flex-col gap-1">
                             <p className="text-gray-500 text-base">
-                                Optional attachment (image or PDF) for better review.
+                                {t("consultingImageOrPdf")}
                             </p>
 
                             <Dropzone
@@ -235,7 +236,7 @@ const Services = () => {
                         ) : (
                             <>
                                 <img src={sent} alt="sent" />
-                                <p>Request Consultation</p>
+                                <p>{t("RequestConsultation")}</p>
                             </>
                         )}
                     </motion.button>

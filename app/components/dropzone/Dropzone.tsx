@@ -3,12 +3,15 @@ import { useDropzone } from "react-dropzone";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import {useTranslation} from "react-i18next";
 
 type DropzoneProps = {
     onFileSelect?: (file: File | null) => void;
 };
 
 export function Dropzone({ onFileSelect }: DropzoneProps) {
+    const { t } = useTranslation();
+
     const [file, setFile] = useState<File | null>(null);
     const [preview, setPreview] = useState<string | null>(null);
 
@@ -72,8 +75,8 @@ export function Dropzone({ onFileSelect }: DropzoneProps) {
             {!file ? (
                 <Typography>
                     {isDragActive
-                        ? "Drop the file here..."
-                        : "Drag & drop file here, or click to upload"}
+                        ? t("DropHere")
+                        : t("Drop")}
                 </Typography>
             ) : (
                 <Box

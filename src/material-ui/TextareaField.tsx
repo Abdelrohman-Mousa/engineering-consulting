@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import {useTranslation} from "react-i18next";
 
 type Props = {
     value: string;
@@ -7,13 +8,15 @@ type Props = {
 };
 
 export default function TextareaField({ value, onChange }: Props) {
+    const { t } = useTranslation();
+
     return (
         <Box
             sx={{ '& .MuiTextField-root': { width: '100%' } }}
             autoComplete="off"
         >
             <TextField
-                label="Description"
+                label={t("descriptionLabel")}
                 multiline
                 maxRows={4}
                 value={value}

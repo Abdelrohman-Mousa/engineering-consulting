@@ -40,7 +40,7 @@ const Navbar = () => {
         { path: "/", label: t("HomePage") },
         { path: "/about", label: t("AboutUS") },
         { path: "/projects", label: t("OurProjects") },
-        { path: "/consultationRequest", label: t("Consultation Request") },
+        { path: "/consultationRequest", label: t("Services") },
         { path: "/contact", label: t("ContactUS") },
     ];
 

@@ -13,7 +13,7 @@
   "Home" :"الصفحة الرئيسية",
   "About" : "من نحن",
   "Projects" : "المشاريع",
-  "Services" : "الخدمات",
+  "Services" : "طلب استشارة",
   "Contact" : "اتصل بنا",
   "DarkMode" : "الوضع الداكن",
   "LightMode" : "الوضع الفاتح",
@@ -130,6 +130,26 @@
   "completedProjects": "المشاريع المكتملة",
   "filterHint": "استخدم الفلتر لعرض نوع المشروع المفضل لديك.",
   "categoriesLabel": "الفئات",
+  "consultingTitle": "احصل على استشارة من خبير",
+  "consultingPragraph": "أخبرنا عن حالتك وسيتواصل معك خبراؤنا لتقديم أفضل حل مناسب لك.",
+  "consultingImageOrPdf": "مرفق اختياري (صورة أو ملف PDF) لمراجعة أفضل.",
+  "ConsultingType": "نوع الاستشارة",
+  "TechnicalConsulting": "استشارة تقنية",
+  "BusinessConsulting": "استشارة أعمال",
+  "MarketingConsulting": "استشارة تسويقية",
+  "EnterpriseConsulting": "استشارة مؤسسية",
+  "PriorityLevel": "مستوى الأولوية",
+  "PriorityLow": "منخفض",
+  "PriorityMedium": "متوسط",
+  "PriorityHigh": "عالي",
+  "Drop": "اسحب وأفلت الملف هنا، أو اضغط للرفع",
+  "DropHere": "أسقط الملف هنا...",
+  "ChooseACountry": "اختر دولة",
+  "RequestConsultation": "تقديم طلب استشارة",
+
+
+
+
 
 
   "categories": {

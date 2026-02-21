@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import {useTranslation} from "react-i18next";
 
 type Props = {
     value: string;
@@ -8,6 +9,7 @@ type Props = {
 };
 
 export default function CountrySelect({ value, onChange }: Props) {
+    const { t } = useTranslation();
 
     return (
         <Autocomplete
@@ -33,7 +35,7 @@ export default function CountrySelect({ value, onChange }: Props) {
             renderInput={(params) => (
                 <TextField
                     {...params}
-                    label="Choose a country"
+                    label={t("ChooseACountry")}
                     sx={{
                         '& .MuiOutlinedInput-root': {
                             borderRadius: '30px',

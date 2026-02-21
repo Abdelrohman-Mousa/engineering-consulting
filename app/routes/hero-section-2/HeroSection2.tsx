@@ -30,13 +30,13 @@ const textVariants = {
 const HeroSection2 = () => {
     const { t } = useTranslation();
     const titles = [
-        t("consultationRequest-1"),
-        t("consultationRequest-2"),
-        t("consultationRequest-3"),
-        t("consultationRequest-4"),
-        t("consultationRequest-5"),
-        t("consultationRequest-6"),
-        t("consultationRequest-7"),
+        t("services-1"),
+        t("services-2"),
+        t("services-3"),
+        t("services-4"),
+        t("services-5"),
+        t("services-6"),
+        t("services-7"),
     ];
 
     return (

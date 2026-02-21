@@ -5,6 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import type { SelectChangeEvent } from '@mui/material';
+import {useTranslation} from "react-i18next";
 
 type Props = {
     value: string;
@@ -12,6 +13,7 @@ type Props = {
 };
 
 export default function ConsultingType({ value, onChange }: Props) {
+    const { t } = useTranslation();
 
     const handleChange = (event: SelectChangeEvent) => {
         onChange(event.target.value as string);
@@ -21,7 +23,7 @@ export default function ConsultingType({ value, onChange }: Props) {
         <Box className="consulting-type">
             <FormControl fullWidth>
                 <InputLabel id="consulting-type-label">
-                    Consulting Type
+                    {t("ConsultingType")}
                 </InputLabel>
 
                 <Select
@@ -32,10 +34,10 @@ export default function ConsultingType({ value, onChange }: Props) {
                     label="Consulting Type"
                     onChange={handleChange}
                 >
-                    <MenuItem value="technical">Technical Consulting</MenuItem>
-                    <MenuItem value="business">Business Consulting</MenuItem>
-                    <MenuItem value="marketing">Marketing Consulting</MenuItem>
-                    <MenuItem value="enterprise">Enterprise Consulting</MenuItem>
+                    <MenuItem value="technical">{t("TechnicalConsulting")}</MenuItem>
+                    <MenuItem value="business">{t("BusinessConsulting")}</MenuItem>
+                    <MenuItem value="marketing">{t("MarketingConsulting")}</MenuItem>
+                    <MenuItem value="enterprise">{t("EnterpriseConsulting")}</MenuItem>
                 </Select>
             </FormControl>
         </Box>

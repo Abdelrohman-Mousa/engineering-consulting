@@ -13,7 +13,7 @@
   "Home" :"Accueil",
   "About" : "À propos",
   "Projects" : "Projets",
-  "Services" : "Services",
+  "Services" : "Demande de consultation",
   "Contact" : "Contact",
   "DarkMode" : "Mode sombre",
   "LightMode" : "Mode clair",
@@ -130,6 +130,28 @@
   "completedProjects": "Projets terminés",
   "filterHint": "Utilisez le filtre pour afficher votre type de projet préféré.",
   "categoriesLabel": "Catégories",
+  "consultingTitle": "Obtenez une consultation d’expert",
+  "consultingPragraph": "Parlez-nous de votre situation et nos experts vous contacteront avec la meilleure solution adaptée à vos besoins.",
+  "consultingImageOrPdf": "Pièce jointe facultative (image ou fichier PDF) pour une meilleure évaluation.",
+  "ConsultingType": "Type de consultation",
+  "TechnicalConsulting": "Consultation technique",
+  "BusinessConsulting": "Consultation en affaires",
+  "MarketingConsulting": "Consultation en marketing",
+  "EnterpriseConsulting": "Consultation d’entreprise",
+  "PriorityLevel": "Niveau de priorité",
+  "PriorityLow": "Faible",
+  "PriorityMedium": "Moyen",
+  "PriorityHigh": "Élevé",
+  "Drop": "Glissez-déposez le fichier ici, ou cliquez pour télécharger",
+  "DropHere": "Déposez le fichier ici...",
+  "ChooseACountry": "Choisissez un pays",
+  "RequestConsultation": "Soumettre une demande de consultation",
+
+
+
+
+
+
 
   "categories": {
     "allProjects": "Tous les projets",

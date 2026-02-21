@@ -5,6 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import type { SelectChangeEvent } from '@mui/material';
+import {useTranslation} from "react-i18next";
 
 type Props = {
     value: string;
@@ -12,6 +13,7 @@ type Props = {
 };
 
 export default function Priority({ value, onChange }: Props) {
+    const { t } = useTranslation();
 
     const handleChange = (event: SelectChangeEvent) => {
         onChange(event.target.value as string);
@@ -21,7 +23,7 @@ export default function Priority({ value, onChange }: Props) {
         <Box className="priority-level">
             <FormControl fullWidth>
                 <InputLabel id="priority-label">
-                    Priority Level
+                    {t("PriorityLevel")}
                 </InputLabel>
 
                 <Select
@@ -32,9 +34,9 @@ export default function Priority({ value, onChange }: Props) {
                     label="Priority Level"
                     onChange={handleChange}
                 >
-                    <MenuItem value="low">Low</MenuItem>
-                    <MenuItem value="medium">Medium</MenuItem>
-                    <MenuItem value="high">High</MenuItem>
+                    <MenuItem value="low">{t("PriorityLow")}</MenuItem>
+                    <MenuItem value="medium">{t("PriorityMedium")}</MenuItem>
+                    <MenuItem value="high">{t("PriorityHigh")}</MenuItem>
                 </Select>
             </FormControl>
         </Box>
