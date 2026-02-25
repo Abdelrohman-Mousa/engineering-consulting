@@ -73,6 +73,7 @@ const Navbar = () => {
                         <Link to="/dashboard">
                             <ShinyButton>
                                 <img src="/assets/icons/dashboard.svg" alt="dashboard" />
+                                <span className="badge">8</span>
                             </ShinyButton>
                         </Link>
                     </div>

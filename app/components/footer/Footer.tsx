@@ -6,6 +6,7 @@ import location from "/assets/icons/location-1.svg";
 import facebook from "/assets/icons/facebook-1.svg";
 import linkedin from "/assets/icons/linkedin-1.svg";
 import insta from "/assets/icons/instagram-2.svg";
+import { Link } from "react-router-dom";
 
 
 import {useTranslation} from "react-i18next";
@@ -23,16 +24,26 @@ const Footer = () => {
                         <h3 dangerouslySetInnerHTML={{ __html: t("logo") }} />
                     </div>
                     <p className="footer-para">{t("footer-pra")}</p>
-                    <ShinyButton className="footer-button">{t("footer-btn")}</ShinyButton>
+                    <Link to="/consultationRequest">
+                        <ShinyButton className="footer-button">{t("footer-btn")}</ShinyButton>
+                    </Link>
                 </div>
 
                 <div className="footer-links">
                     <h3>{t("footer-links")}</h3>
                     <ul>
-                        <li> <a href="#">{t("footer-links-1")}</a> </li>
-                        <li> <a href="#">{t("footer-links-2")}</a> </li>
-                        <li> <a href="#">{t("footer-links-3")}</a> </li>
-                        <li> <a href="#">{t("footer-links-4")}</a> </li>
+                        <Link to="/about">
+                            <li> {t("footer-links-1")}</li>
+                        </Link>
+                        <Link to="/consultationRequest">
+                            <li> {t("OurServices")} </li>
+                        </Link>
+                        <Link to="/projects">
+                            <li>{t("footer-links-3")}</li>
+                        </Link>
+                        <Link to="/contact">
+                            <li>{t("ContactUS")}</li>
+                        </Link>
                     </ul>
                 </div>
 
@@ -41,15 +52,15 @@ const Footer = () => {
                     <ul>
                         <li>
                             <img src={email} alt="phone"/>
-                            <span>example123@gmail.com</span>
+                            <span>contact@engineeringconsulting.ae</span>
                         </li>
                         <li>
                             <img src={phone} alt="phone"/>
-                            <span>+1234567889</span>
+                            <span>+971 50 123 456</span>
                         </li>
                         <li>
                             <img src={location} alt="phone"/>
-                            <span>egypt,cairo</span>
+                            <span>Burj Khalifa - Downtown Dubai - Dubai</span>
                         </li>
                         <li></li>
                         <li></li>

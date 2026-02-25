@@ -37,7 +37,9 @@ const ProjectDetailsId = () => {
                                 <p>{t(project.big_Description)}</p>
                             </div>
                             <div className="description-btn">
-                                <ShinyButton className="button">{t("button-hero-section")}</ShinyButton>
+                                <Link to="/consultationRequest">
+                                    <ShinyButton className="button">{t("button-hero-section")}</ShinyButton>
+                                </Link>
                             </div>
                         </div>
                     </div>

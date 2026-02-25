@@ -6,17 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bc63c34-6a2a-454a-b4d5-a1ffb5634bc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/dropzone/Dropzone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/dropzone/Dropzone.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/consultationRequest/ConsultationRequest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/countrySelect/CountrySelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/countrySelect/CountrySelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/hero-section-2/hero-section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/hero-section-2/hero-section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/pages/ProjectDetails.$id.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/pages/ProjectDetails.$id.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/ar/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/ar/translation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en/translation.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/fr/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-ui/ConsultingType.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/ConsultingType.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-ui/FormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/FormInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-ui/Priority.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/Priority.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-ui/TextareaField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-ui/TextareaField.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,8 @@
       <workItem from="1770984166285" duration="9702000" />
       <workItem from="1771416754474" duration="1969000" />
       <workItem from="1771504979209" duration="14262000" />
-      <workItem from="1771590636222" duration="12088000" />
+      <workItem from="1771590636222" duration="12759000" />
+      <workItem from="1772059330508" duration="2981000" />
     </task>
     <servers />
   </component>
