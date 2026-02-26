@@ -41,6 +41,11 @@ const Users = () => {
         loadUsers(); // أول تحميل
     }, []);
 
+    const capitalize = (text: string) => {
+        if (!text) return "";
+        return text.charAt(0).toUpperCase() + text.slice(1);
+    };
+
     return (
         <div className="users">
             <div className="title-users">
@@ -60,7 +65,7 @@ const Users = () => {
                        template={(props: any) => (
                            <div className="flex items-center gap-1.5 px-4">
                                <img src={props.imageUrl} alt="users" className="rounded-full size-8 aspect-square text-xl font-bold" referrerPolicy="no-referrer"/>
-                               <p>{props.name}</p>
+                               <p className="text-base font-normal">{capitalize(props.name)}</p>
                            </div>
                        )}
                    />
