@@ -13,7 +13,6 @@ import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
 import { Link } from "react-router-dom";
 
-
 const textVariants = {
     initial: {
         x: 0,
@@ -105,8 +104,13 @@ const HeroSection = () => {
                 whileInView="animate"
                 viewport={{ once: true, amount: 0.3 }}
             >
-
-                <video autoPlay loop muted playsInline className="video-hero-section">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="video-hero-section"
+                >
                     <source src={video} type="video/mp4"/>
                 </video>
                 <div className="description">

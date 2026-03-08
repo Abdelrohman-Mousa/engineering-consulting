@@ -59,7 +59,7 @@ export default function App() {
   const location = useLocation();
 
   // ⛔ الصفحات اللي مش عايز فيها Navbar و Footer
-  const hideLayoutRoutes = ["/contact", "/signin","/projectsDetails/", "/dashboard"];
+  const hideLayoutRoutes = ["/signin", "/dashboard"];
 
   const hideLayout = hideLayoutRoutes.some(route =>
       location.pathname.startsWith(route)
