@@ -20,7 +20,7 @@ import type {Route} from "../../../../.react-router/types/app/routes/about/+type
 
 export function meta({}: Route.MetaArgs) {
     return [
-        { title: "Dashboard Engineering Consulting" },
+        { title: "Dashboard Overview" },
         { name: "description", content: "Dashboard Engineering Consulting" },
     ];
 }

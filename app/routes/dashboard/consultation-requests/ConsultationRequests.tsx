@@ -10,6 +10,14 @@ import toast from "react-hot-toast";
 import DeleteConfirm from "./DeleteConfirm";
 import RequestDetailsModal from "./request-details-modal/RequestDetailsModal";
 import CircularIndeterminate from "~/components/CircularIndeterminate";
+import type {Route} from "../../../../.react-router/types/app/routes/about/+types/About";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Dashboard Consultation Requests" },
+        { name: "description", content: "Dashboard Engineering Consulting" },
+    ];
+}
 
 const ConsultationRequests = () => {
     const [requests, setRequests] = useState<any[]>([]);

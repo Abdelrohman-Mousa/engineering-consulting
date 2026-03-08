@@ -5,6 +5,14 @@ import {cn, formatDate} from "~/lib/utils";
 import {useEffect, useState} from "react";
 import {getUsers} from "/src/auth/getUsers";
 import CircularIndeterminate from "~/components/CircularIndeterminate";
+import type {Route} from "../../../../.react-router/types/app/routes/about/+types/About";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Dashboard Users" },
+        { name: "description", content: "Dashboard Engineering Consulting" },
+    ];
+}
 
 const Users = () => {
 

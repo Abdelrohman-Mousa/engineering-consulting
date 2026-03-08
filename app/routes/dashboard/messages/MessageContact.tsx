@@ -16,6 +16,14 @@ import CircularIndeterminate from "~/components/CircularIndeterminate";
 import toast from "react-hot-toast";
 import type { MessageFilter, MessageStatus } from "/src/types/message";
 import { motion, AnimatePresence } from "framer-motion";
+import type {Route} from "../../../../.react-router/types/app/routes/about/+types/About";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Dashboard Message Contact" },
+        { name: "description", content: "Dashboard Engineering Consulting" },
+    ];
+}
 
 interface Message {
     id?: string;
