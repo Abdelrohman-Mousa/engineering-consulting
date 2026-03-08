@@ -7,7 +7,14 @@ import {useTranslation} from "react-i18next";
 import {useState} from "react";
 import {addMessage} from "../../../src/auth/addMessage";
 import toast from "react-hot-toast";
+import type {Route} from "../../../.react-router/types/app/routes/about/+types/About";
 
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Contact US" },
+        { name: "description", content: "Contact US Engineering Consulting" },
+    ];
+}
 
 const Contact = () => {
     const { t } = useTranslation();

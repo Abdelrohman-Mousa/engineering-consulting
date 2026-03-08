@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 import projectsData from "../../../src/data/projectsData";
 import {ShinyButton} from "~/components/ui/shiny-button";
 import {useTranslation} from "react-i18next";
+import type {Route} from "../../../.react-router/types/app/routes/+types/home";
 
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Our Projects" },
+        { name: "description", content: "Projects Engineering Consulting" },
+    ];
+}
 
 const Projects = () => {
     const { t } = useTranslation();

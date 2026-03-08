@@ -46,10 +46,12 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div className="logo">
-                <img src="/assets/icons/logo.svg" alt="logo" />
-                <h3 className="title-logo" dangerouslySetInnerHTML={{ __html: t("logo") }} />
-            </div>
+            <Link to="/" >
+               <div className="logo">
+                   <img src="/assets/icons/logo.svg" alt="logo" />
+                   <h3 className="title-logo" dangerouslySetInnerHTML={{ __html: t("logo") }} />
+               </div>
+            </Link>
 
             <div className="links-pages">
                 <ul>

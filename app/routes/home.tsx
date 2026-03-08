@@ -11,7 +11,6 @@ import React, {useState, useEffect} from 'react'
 import HeroSection from "~/routes/hero-section/HeroSection";
 import HeroSection2 from "~/routes/hero-section-2/HeroSection2";
 import ClientFeedback from "~/routes/client-feedback/ClientFeedback";
-import Animations from "~/components/Animations";
 import CircularIndeterminate from "~/components/CircularIndeterminate";
 
 

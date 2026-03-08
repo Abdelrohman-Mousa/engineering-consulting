@@ -14,8 +14,14 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-hot-toast";
 import emailjs from "emailjs-com";
 import {useTranslation} from "react-i18next";
+import type {Route} from "../../../.react-router/types/app/routes/about/+types/About";
 
-
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Consultation Request" },
+        { name: "description", content: "Consultation Request Engineering Consulting" },
+    ];
+}
 
 type FormData = {
     name: string;

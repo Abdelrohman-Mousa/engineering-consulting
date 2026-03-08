@@ -16,7 +16,14 @@ import {
 } from "@syncfusion/ej2-react-charts";
 import { Inject } from "@syncfusion/ej2-react-grids";
 import {getUserGrowthPerDay, getConsultGrowthPerDay} from "../../../../src/auth/graph";
+import type {Route} from "../../../../.react-router/types/app/routes/about/+types/About";
 
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Dashboard Engineering Consulting" },
+        { name: "description", content: "Dashboard Engineering Consulting" },
+    ];
+}
 
 const PageOverview = () => {
 
